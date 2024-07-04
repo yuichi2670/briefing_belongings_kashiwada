@@ -1,0 +1,131 @@
+@use "global" as *;
+
+
+.p-interview-archive {
+    margin-top: rem(66);
+    margin-bottom: rem(18);
+}
+
+.p-interview-archive__inner {
+    padding-left: rem(16);
+    padding-right: rem(16);
+}
+
+.p-interview-archive__item {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+}
+
+.p-interview-archive__image {
+    overflow: hidden;
+    
+}
+
+.p-interview-archive__image img {
+    aspect-ratio: 1;
+
+    @include mq(md) {
+        aspect-ratio: 625/340;
+        transition: ease-out .6s;
+    }
+}
+
+.p-interview-archive__info {
+    font-family: $en-font-second;
+    background-color: #fff;
+    padding: rem(45) rem(35);
+
+    @include mq(md) {
+        height: auto;
+        padding: rem(44) rem(24) rem(24) rem(44);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.p-interview-archive__number {
+    font-size: rem(15);
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+}
+
+.p-interview-archive__number span {
+    width: rem(58);
+    border-bottom: 1px solid;
+    display: block;
+    margin-left: rem(5);
+    margin-right: rem(5);
+}
+
+.p-interview-archive__title {
+    font-weight: 400;
+    font-size: rem(37);
+    line-height: 1;
+    margin-top: rem(19);
+
+    @include mq(md) {
+        margin-top: rem(17);
+        font-size: rem(48);
+    }
+}
+
+.p-interview-archive__sub {
+    font-size: rem(15);
+    font-weight: 700;
+    margin-top: rem(17);
+
+    @include mq(md) {
+        margin-top: rem(11);
+    }
+}
+
+.p-interview-archive__link {
+    margin-top: rem(74);
+    font-weight: 400;
+    font-size: rem(15);
+    width: rem(127);
+    height: rem(34);
+    line-height: rem(34);
+    text-transform: capitalize;
+    border-radius: rem(17);
+    border: 1px solid;
+    padding: 0 rem(15) 0 rem(12);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(md) {
+        margin-top: 0;
+        margin-left: auto;
+    }
+}
+
+.p-interview-archive__arrow {
+    transition: ease-out .6s;
+}
+
+.p-interview-archive__arrow svg {
+    width: rem(15);
+    height: rem(15);
+    transform: rotate(-45deg);
+    margin-bottom: rem(-3);
+}
+
+.p-interview-archive__item:hover .p-interview-archive__image img {
+    @include mq(md) {
+        transform: scale(1.05);
+    }
+}
+
+.p-interview-archive__item:hover .p-interview-archive__arrow {
+    @include mq(md) {
+        transform: translate(rem(3), rem(-3));
+        transition: ease-out .6s;
+    }
+}

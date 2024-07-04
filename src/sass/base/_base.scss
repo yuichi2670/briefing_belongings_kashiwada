@@ -1,0 +1,336 @@
+/* リキッドレイアウト対応 */
+@use "global" as *;
+
+html {
+  //~375px
+  @media (max-width: 375px) {
+    font-size: vw(375, 16);
+  }
+
+  //375px~787px
+  font-size: 16px;
+
+  @include mq("md") {
+    font-size: vw(strip-unit($inner), 16);
+  }
+
+  //inner~max-screen
+  @media (min-width: $inner) {
+    font-size: 16px;
+  }
+}
+
+/* pcの電話番号発信対応 */
+a[href^="tel:"] {
+  @include mq("md") {
+    pointer-events: none;
+  }
+}
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+  @include mq("md") {
+    &:hover {
+      // opacity: 0.8;
+    }
+  }
+}
+
+/*======================================================
+  改行
+======================================================*/
+//768px以上を表示
+.br-pc {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+
+//モバイルのみ表示
+.br-sp {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .br-tab {
+    display: block;
+  }
+}
+
+/*======================================================
+各ページの全体のカラー  
+======================================================*/
+
+.body--sydney {
+  background-color: #ffc5bd;
+  position: relative;
+  // margin-bottom: rem(-100);
+}
+
+.body--melbourne {
+  background-color: #ebfad2;
+  position: relative;
+  // margin-bottom: rem(-100);
+}
+
+.body--interview {
+  background-color: #F8F9E5;
+  position: relative;
+  // margin-bottom: rem(-100);
+}
+
+.body--taipei {
+  background-color: #EBFFFD;
+  position: relative;
+  // margin-bottom: rem(-100);
+}
+
+.body--la {
+  background-color: #F2F0C0;
+  position: relative;
+  // margin-bottom: rem(-100);
+}
+
+/*======================================================
+  記事がないもしくはリンクがない時のスタイル
+======================================================*/
+.is-close {
+  pointer-events: none;
+  cursor: not-allowed;
+  display: block;
+}
+
+.is-close--gray::after {
+  background-color: rgb(50, 50, 50, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+}
+
+.is-close--gray02::after {
+  background-color: rgb(50, 50, 50, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  border-radius: rem(10);
+}
+
+/*======================================================
+メニュー開閉時にbodyを固定
+======================================================*/
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.is-fixed {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+/*======================================================
+  melbourneページのカラースタイル
+======================================================*/
+.--melbourne-text {
+  color: #005829 !important;
+}
+
+
+.--melbourne-bg {
+  background-color: #005829 !important;
+}
+
+.--melbourne-link {
+  color: #005829!important;
+}
+
+.--melbourne-text a {
+  color: #005829 ;
+}
+
+/*======================================================
+  taipeiページのカラースタイル
+======================================================*/
+.--taipei-text {
+  color: #9540E9 !important;
+}
+
+
+.--taipei-bg {
+  background-color: #9540E9 !important;
+}
+
+.--taipei-link {
+  color: #9540E9!important;
+  text-decoration: underline;
+}
+
+.--taipei-text a {
+  color: #9540E9 ;
+}
+
+/*======================================================
+  los_angelesのカラースタイル
+======================================================*/
+
+.--taipei-text {
+  color: $orange !important;
+}
+
+
+.--taipei-text a {
+  color: $orange ;
+}
+
+.--la-bg {
+  background-color: $orange !important;
+}
+
+.--la-link {
+  color: $orange!important;
+  text-decoration: underline;
+}
+
+/*======================================================
+  外部要素削除
+======================================================*/
+.c-breadcrumb {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.sticky-top {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.l-headline {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.ld-lg-none {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+#header-logout-form {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.container.px-0 {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.l-default__breadcrumb {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.d-lg-none {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.d-lg-block {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.p-topic-detail__btn-back {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.l-default__bottom-overlay {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.l-footer-b {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.l-default__drawer-menu {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.js-ajax-loader {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.alert-info {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.l-header__global-navi {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.flex-nowrap {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.c-drawer-menu-list-menu__container  {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.c-drawer-menu-list-menu__title {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.c-drawer-menu-list-menu__link {
+  display: none;
+  height: 0!important;
+  opacity: 0;
+}
+.d-flex {
+  display: none!important;
+  height: 0!important;
+  opacity: 0;
+}
+.c-drawer-menu-list-menu__content {
+  display: none!important;
+  height: 0!important;
+  opacity: 0;
+}
+.p-global-navi-a__item {
+  display: none!important;
+  height: 0!important;
+  opacity: 0;
+}
+
+/*======================================================
+  フェードの読み込み
+======================================================*/
+.js-fade {
+  opacity: 0;
+  transform: translateY(#{rem(15)});
+}
+.js-fade-fix {
+  opacity: 0;
+  transform: translateY(#{rem(15)});
+}

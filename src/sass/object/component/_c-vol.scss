@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.c-vol {
+    margin-top: rem(10);
+    font-family: $en-font-second;
+    font-size: rem(14);
+
+    @include mq(md) {
+        margin-top: rem(17);
+        font-size: rem(15);
+    }
+}
+
+.c-vol__title {
+    font-size: rem(20);
+    font-family: $en-font-second;
+    font-weight: 300;
+    margin-top: rem(6);
+    line-height: calc(26/20);
+    @include mq(md) {
+        font-size: rem(22);
+        line-height: calc(28/22);
+    }
+}

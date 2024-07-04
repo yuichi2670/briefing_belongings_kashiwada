@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.l-center-line {
+
+    @include mq(md) {
+        position: absolute;
+        content: "";
+        width: 1px;
+        // height: calc(100% - #{rem(100)});
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $red;
+        z-index: -2;
+    }
+}
+
+
+.l-center-line--belongings {
+    @include mq(md) {
+        position: fixed;
+        width: 1px;
+        // height: 100%;
+        // height: calc(100% - #{rem(100)});
+        top: rem(60);
+        right: rem(290);
+        transform: translateX(-50%);
+        z-index: -2;
+        background: #000;
+    }
+}

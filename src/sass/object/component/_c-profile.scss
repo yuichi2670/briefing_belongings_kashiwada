@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.c-profile {
+    display: flex;
+    justify-content: space-between;
+    font-family: $en-font-second;
+
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.c-profile__name {
+    font-size: rem(12);
+}
+
+.c-profile__date {
+    font-size: rem(12);
+    @include mq(md) {
+        margin-top: rem(15);
+    }
+}
+
+.c-profile__date h4,
+.c-profile__name h4 {
+    font-size: rem(12);
+    font-weight: 400;
+
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}

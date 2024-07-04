@@ -1,0 +1,131 @@
+@use "global" as *;
+
+.s-main__inner {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        // max-width: rem(1580);
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+}
+
+.s-main__image {
+    @include mq(md) {
+        width: 50%;
+        // max-width: rem(940);
+        position: sticky;
+        top: 0;
+        height: 100%;
+        padding-right: rem(40);
+    }
+}
+
+.s-main__image--melbourne img {
+    aspect-ratio: 375/530;
+    object-fit: cover;
+    @include mq(md) {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        aspect-ratio: initial;
+    }
+}
+
+.s-main__container  {
+    padding-left: rem(15);
+    padding-right: rem(15);
+    margin-top: rem(50);
+    @include mq(md) {
+        width: 50%;
+         margin-top: rem(114);
+         padding-left: rem(40);
+         padding-right: rem(40);
+        //  max-width: rem(940);
+    }
+}
+.s-main__item {
+    text-align: center;
+    color: $red;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.s-main__title {
+    font-size: rem(26);
+    font-weight: 900;
+    font-family: $en-font-first;
+    // color: $red;
+}
+
+.s-main__profile {
+    margin-top: rem(30);
+    padding-left: rem(40);
+    padding-right: rem(40);
+}
+
+.s-main__marker {
+    width: 100%;
+    height: 1px;
+    margin-top: rem(50);
+    
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+.s-main__text {
+    margin-top: rem(40);
+    color: $red;
+    @include mq(md) {
+        margin-top: rem(70);
+        padding-left: rem(54);
+        padding-right: rem(54);
+    }
+}
+.s-main__text p {
+    // color: $red;
+    
+}
+
+.s-main__view {
+    margin-top: rem(40);
+    display: block;
+
+    @include mq(md) {
+        margin-top: rem(0);
+        // max-width: rem(1200);
+        padding-left: rem(40);
+        padding-right: rem(40);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.s-main__viewn--melbourne {
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
+
+
+
+.s-main__view--pc {
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
+
+.s-main__view-bg {
+    @include mq(md) {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #FFC5BD;
+        top: 0;
+        left: 0;
+    }
+}
+
+.s-main__view--la {
+    margin-top: rem(80);
+}

@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.l-section {
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
+
+.l-section--la {
+    margin-top: rem(67);
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
+
+.l-section--video {
+    margin-top: rem(80);
+
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
+

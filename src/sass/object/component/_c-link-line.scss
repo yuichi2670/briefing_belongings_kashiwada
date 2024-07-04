@@ -1,0 +1,17 @@
+@use "global" as *;
+
+
+.c-link-line {
+    background-size: 100% rem(1);
+    background-position: 0 85%;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    display: inline;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+    background-image: linear-gradient(#000, #000);
+
+    @include mq(md) {
+        transition: all .3s;
+    }
+}

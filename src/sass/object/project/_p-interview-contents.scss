@@ -1,0 +1,419 @@
+@use "global" as *;
+
+.p-interview-contents {
+    margin-top: rem(93);
+
+    @include mq(md) {
+        margin-top: rem(154);
+    }
+}
+.p-interview-contents--first {
+    margin-top: rem(95);
+
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}
+
+.p-interview-contents__text {
+    padding-left: rem(18);
+    padding-right: rem(20);
+
+    @include mq(md) {
+        width: 75.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.p-interview-contents__text p {
+    text-align: center;
+    font-weight: 600;
+
+    @include mq(md) {
+        // text-align: left;
+        font-size: rem(15);
+    }
+}
+.p-interview-contents__text--large {
+    padding-left: rem(15);
+    padding-right: rem(18);
+
+    @include mq(md) {
+        padding-left: 0;
+        padding-right: 0;
+        width: 41.5%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+.p-interview-contents__text--large-jay {
+    padding-left: rem(15);
+    padding-right: rem(18);
+    font-size: rem(17);
+    text-decoration: underline;
+
+    @include mq(md) {
+        padding-left: 0;
+        padding-right: 0;
+        width: 61.7%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: rem(20);
+
+    }
+}
+.p-interview-contents__text--space {
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(137);
+    }
+}
+.p-interview-contents__text--big {
+    padding-left: rem(15);
+    padding-right: rem(18);
+
+   
+}
+.p-interview-contents__text--big p {
+    text-decoration: underline!important;
+    font-size: rem(17)!important;
+    // font-weight: 700!important;
+
+    @include mq(md) {
+        font-size: rem(30)!important;
+        line-height: calc(43/30);
+    }
+}
+.p-interview-contents__text--en p {
+    font-size: rem(14);
+    font-weight: 600;
+    line-height: calc(23/14);
+
+    @include mq(md) {
+        font-size: rem(17);
+        line-height: calc(25/17);
+    }
+}
+
+.p-interview-contents__text--en-big p {
+    font-size: rem(17);
+}
+
+.p-interview-contents__text--large p {
+    font-size: rem(17);
+    font-weight: 600;
+    text-decoration: underline;
+
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+
+.p-interview-contents__text--large-jay p {
+    font-size: rem(17);
+    font-weight: 600;
+    text-decoration: underline;
+
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+.p-interview-contents__block {
+    margin-top: rem(136);
+
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 600fr 514fr;
+        gap: rem(67);
+        padding-left: rem(43);
+        padding-right: rem(59);
+        margin-top: rem(124);
+        align-items: start;
+    }
+}
+
+.p-interview-contents__block--jay {
+    margin-top: rem(74);
+}
+
+.p-interview-contents__block--02 {
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(137)!important;
+    }
+}
+
+.p-interview-contents__block--en {
+    @include mq(md) {
+        margin-top: rem(63);
+    }
+}
+.p-interview-contents__image {
+    width: 73.3%;
+    margin: auto;
+    position: relative;
+
+    @include mq(md) {
+        width: 100%;
+        position: sticky;
+        // height: 62.5vw;
+        top: 0;
+
+    }
+}
+.p-interview-contents__image:not(:first-child) {
+    margin-top: rem(10);
+}
+.p-interview-contents__image img {
+    aspect-ratio: 275/353;
+    object-fit: cover;
+}
+
+.p-interview-contents__over {
+    @include mq(md) {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        max-height: 100%;
+    }
+}
+
+.p-interview-contents__comments {
+    padding-left: rem(15);
+    padding-right: rem(15);
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        position: sticky;
+        top: rem(90);
+        align-self: start;
+    }
+}
+
+.p-interview-contents__comment span {
+    font-family: $en-font-second;
+}
+
+.p-interview-contents__comment--en {
+    font-family: $en-font-second;
+    font-weight: 100;
+    font-size: rem(14);
+}
+
+.p-interview-contents__comment--en p {
+    font-weight: 100!important;
+    font-size: rem(14)!important;
+}
+
+.p-interview-contents__comment--en h4 {
+    font-weight: 700;
+    font-size: rem(14);
+    display: block;
+}
+
+.p-interview-contents__comment:nth-child(n + 2) {
+    margin-top: rem(36);
+}
+
+.p-interview-contents__comment p {
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: normal;
+    margin-top: calc(#{rem(14)} * (12 / 12));
+
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}
+
+.p-interview-contents__comment:first-child p {
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.p-interview-contents__comment strong {
+    font-weight: 600;
+    font-size: rem(12);
+    margin-bottom: rem(30);
+    display: block;
+    line-height: normal;
+
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}
+
+.p-interview-contents__comment--jay strong {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.p-interview-contents__collaboration {
+    margin-top: rem(22);
+    font-family: $en-font-second;
+    font-weight: 700;
+    font-size: rem(11);
+    line-height: 1.7;
+    display: flex;
+    align-items: center;
+
+    @include mq(md) {
+        margin-top: rem(75);
+        transition: all .3s;
+    }
+}
+
+.p-interview-contents__collaboration:hover .p-interview-contents__arrow {
+    @include mq(md) {
+        transform: translate(rem(3), rem(-3));
+    }
+}
+
+.p-interview-contents__collaboration:hover .c-link-line {
+    @include mq(md) {
+        background-size: 0% rem(1);
+    }
+}
+
+.p-interview-contents__arrow {
+    margin-left: rem(5);
+    @include mq(md) {
+        transition: all .3s;
+    }
+}
+
+.p-interview-contents__arrow svg {
+    display: block;
+    width: rem(9);
+}
+
+
+.p-interview-contents__bg {
+    margin-top: rem(93);
+
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
+
+.p-interview-contents__profileBg {
+    background-color: #fff;
+}
+
+.p-interview-contents__profile {
+    padding-top: rem(40);
+    // background-color: #fff;
+
+    @include mq(md) {
+        padding-top: rem(50);
+        margin-left: auto;
+        margin-right: auto;
+        max-width: rem(490);
+    }
+}
+
+.p-interview-contents__profile h3 {
+    font-size: rem(20);
+    text-align: center;
+    font-family: $en-font-second;
+    font-weight: 500;
+    line-height: normal;
+
+
+}
+
+.p-interview-contents__lists {
+    margin-top: rem(50);
+    padding-left: rem(50);
+    padding-right: rem(53);
+
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 220fr 1fr 220fr;
+        gap: rem(23);
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: rem(40);
+    }
+}
+
+.p-interview-contents__names--en {
+    font-family: $en-font-second;
+}
+
+.p-interview-contents__name {
+    font-size: rem(14);
+    font-weight: 700;
+    line-height: calc(19/14);
+}
+
+.p-interview-contents__detail {
+    font-size: rem(11);
+    font-weight: 400;
+    line-height: calc(19/11);
+    margin-top: rem(11);
+}
+
+
+
+.p-interview-contents__detail--en {
+    font-family: $en-font-second;
+    line-height: calc(19/12);
+    font-size: rem(12);
+    margin-top: rem(17);
+    @include mq(md) {
+        // margin-top: rem(8);
+    }
+}
+
+.p-interview-contents__line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-top: rem(58);
+    margin-bottom: rem(52);
+
+    @include mq(md) {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 1px;
+        height: 100%;
+    }
+}
+
+.p-interview-contents__links {
+    margin-top: rem(20);
+
+}
+
+.p-interview-contents__links a {
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: calc(19/12);
+    font-family: $en-font-second;
+    display: block;
+    width: fit-content;
+}
+
+.p-interview-contents__links p {
+    background-size: 100% 0.0625rem;
+    background-position: 0px 85%;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    display: inline;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+    background-image: linear-gradient(#000, #000);
+}
+

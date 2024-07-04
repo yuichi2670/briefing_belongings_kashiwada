@@ -1,0 +1,266 @@
+@use "global" as *;
+
+.c-column-view {
+    color: $red;
+    
+
+    @include mq(md) {
+        width: 50%;
+        // max-width: rem(940);
+        padding-left: rem(40);
+        margin-top: 0;
+    }
+}
+
+.c-column-view--pc {
+    @include mq(md) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: rem(150);
+    }
+}
+
+.c-column-view--pc02 {
+    @include mq(md) {
+        // max-width: rem(1200);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: rem(100)!important;
+    }
+}
+
+.c-column-view--la {
+    @include mq(md) {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 43%;
+        margin-top: rem(88);
+    }
+}
+
+.c-column-view__image img {
+    // aspect-ratio: 345/460;
+    // object-fit: cover;
+}
+
+.c-column-view__image {
+    display: block;
+    position: relative;
+}
+
+// .c-column-view__image::after {
+//     position: absolute;
+//     content: "";
+//     background-color: #ffc5bd;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: -1;
+// }
+
+.c-column-view__image:not(:first-child) {
+    margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
+
+.c-column-view__image--600 {
+    @include mq(md) {
+        width: 46.8%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.c-column-view__text {
+    font-size: rem(12);
+    line-height: normal;
+    font-weight: 500;
+    margin-top: rem(13);
+}
+
+.c-column-view__icon {
+    position: absolute;
+    content: "";
+    right: rem(10);
+    bottom: rem(10);
+    display: flex;
+}
+
+.c-column-view__icon--12 {
+    bottom: 28%;
+    right: 71%;
+}
+.c-column-view__icon--22-1 {
+    bottom: 77%;
+    right: 37%;
+
+    @include mq(md) {
+        right: calc(50% - #{rem(50)});
+    }
+}
+.c-column-view__icon--22-2 {
+    bottom: 45%;
+    right: 24%;
+
+    @include mq(md) {
+        bottom: 44.5%;
+        right: 26%;
+    }
+}
+.c-column-view__icon--22-3 {
+    bottom: 23%;
+    right: 57%;
+
+    @include mq(md) {
+        bottom: 27%;
+        right: 58%;
+    }
+}
+
+.c-column-view__link {
+    width: rem(22);
+    height: rem(22);
+    background-color: $white;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: block;
+    position: relative;
+}
+
+.c-column-view__link:not(:first-child) {
+    margin-left: rem(5);
+}
+
+.c-column-view__link span {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $red;
+    transition: all 0.3s;
+}
+
+.c-column-view__link--melbourne span {
+    background-color: $green;
+}
+
+.c-column-view__link--interview span {
+    background-color: #000;
+}
+
+.c-column-view__link--taipei span {
+    background-color: $purple;
+}
+
+.c-column-view__link--la span {
+    background-color: $orange;
+}
+
+.c-column-view__link span:nth-child(1) {
+    width: 1px;
+    height: rem(10);
+}
+
+.c-column-view__link span:nth-child(2) {
+    width: rem(10);
+    height: 1px;
+}
+
+
+//   マウスオーバー
+
+.c-column-view__link:hover {
+    @include mq(md) {
+        background-color: $red;
+        transition: all 0.3s;
+    }
+}
+
+.c-column-view__link--interview:hover {
+        @include mq(md) {
+            background-color: #000;
+            transition: all 0.3s;
+        }
+}
+
+.c-column-view__link--taipei:hover {
+    @include mq(md) {
+        background-color: $purple;
+        transition: all 0.3s;
+    }
+}
+
+.c-column-view__link--la:hover {
+    @include mq(md) {
+        background-color: $orange;
+        transition: all 0.3s;
+    }
+}
+
+.c-column-view__icon:hover span {
+    @include mq(md) {
+        background-color: $white;
+        transition: all 0.3s;
+    }
+}
+
+.c-column-view__link--melbourne:hover {
+    @include mq(md) {
+        background-color: $green;
+        transition: all 0.3s;
+    }
+}
+
+.c-column-view__link--interview:hover span {
+        @include mq(md) {
+            background-color: #fff;
+            transition: all 0.3s;
+        }
+}
+
+.c-column-view__link--taipei:hover span {
+        @include mq(md) {
+            background-color: #fff;
+            transition: all 0.3s;
+        }
+}
+
+.c-column-view__link--la:hover span {
+        @include mq(md) {
+            background-color: #fff;
+            transition: all 0.3s;
+        }
+}
+
+/*======================================================
+    20240422~追加
+======================================================*/
+
+.c-column-view__image--small {
+    // padding-left: rem(40);
+    // padding-right: rem(40);
+
+    @include mq(md) {
+        width: 46.875%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.c-column-view__image--la {
+    padding-left: rem(40);
+    padding-right: rem(40);
+    @include mq(md) {
+        width: 46.875%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+}

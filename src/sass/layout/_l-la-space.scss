@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-la-space {
+    margin-top: rem(100);
+}
+
+.l-la-space--pc {
+    @include mq(md) {
+        margin-top: rem(150)!important;
+    }
+}

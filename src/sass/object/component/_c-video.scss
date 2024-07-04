@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.c-video {
+    @include mq(md) {
+        width: 60%;
+    }
+}
+
+.c-video--la {
+    padding-top: rem(92);
+    @include mq(md) {
+        width: 26%;
+        padding-top: rem(200);
+        min-width: rem(332);
+
+    }
+}
+
+.c-video video {
+    width: 100%;
+}
+
+.c-video--large video {
+    width: 100%;
+    
+}
+
+.c-video--large {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        width: 93.75%;
+    }
+}

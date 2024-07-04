@@ -1,0 +1,121 @@
+@use "global" as *;
+.c-map {
+    position: relative;
+    width: 75%;
+    max-width: rem(199);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        margin-top: rem(25);
+        width: 100%;
+        max-width: rem(187);
+    }
+}
+
+.c-map--taipei {
+    max-width: rem(107);
+    margin-top: rem(27);
+}
+
+.c-map--la {
+    max-width: rem(309);
+    margin-top: rem(7);
+}
+
+.c-map__point {
+    width: rem(15);
+    height: rem(15);
+    position: absolute;
+    pointer-events: all;
+    top: 67%;
+    right: 4%;
+    opacity: 0;
+}
+
+.c-map__point--melbourne {
+    top: 78%;
+    right: 17%;
+}
+
+.c-map__point--taipei {
+    top: 7%;
+    right: 15%;
+}
+
+.c-map__point--la {
+    top: 53%;
+    right: 92%;
+}
+
+.c-map__dots {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.c-map__dot {
+    background: $red;
+    border-radius: 50%;
+    border: 2px solid $red;
+    animation: pulsate 1s ease-out;
+    // animation-iteration-count: infinite;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.c-map__dot--melbourne {
+    background: $green;
+    border: 2px solid $green;
+}
+
+.c-map__dot--taipei {
+    background: $purple;
+    border: 2px solid $purple;
+}
+
+.c-map__dot--la {
+    background: $orange;
+    border: 2px solid $orange;
+}
+
+.c-map__pulse {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: $red;
+    border-radius: 50%;
+    border: rem(2) solid $red;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+}
+
+.c-map__pulse--melbourne {
+    background: $green;
+    border: rem(2) solid $green;
+}
+
+.c-map__pulse--taipei {
+    background: $purple;
+    border: rem(2) solid $purple;
+}
+
+.c-map__pulse--la {
+    background: $orange;
+    border: rem(2) solid $orange;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: translate(-50%,-50%) scale(1);
+        opacity: .9;
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(2);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.c-marker {
+    background-image: linear-gradient(to bottom, #000 100%);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    // padding-bottom: rem(5);
+    overflow: hidden;
+}
+
+.c-marker--red {
+    background-image: linear-gradient(to bottom, $red 100%);
+}
+
+.c-marker--green {
+    background-image: linear-gradient(to bottom, $green 100%);
+}
+
+.c-marker--black {
+    background-image: linear-gradient(to bottom, #000 100%);
+}
+
+.c-marker--taipei {
+    background-image: linear-gradient(to bottom, $purple 100%);
+}
+
+.c-marker--la {
+    background-image: linear-gradient(to bottom, $orange 100%);
+}
+

@@ -1,0 +1,105 @@
+@use "global" as *;
+
+.p-about {
+    @include mq(md) {
+        margin-top: rem(72);
+    }
+}
+
+.p-about__inner {
+    @include mq(md) {
+        max-width: initial;
+    }
+}
+
+.p-about__items {
+    @include mq(md) {
+        // width: calc(83.4% - #{rem(40)});
+        margin-left: rem(40);
+    }
+}
+
+.p-about__line {
+    width: 90%;
+    margin-left: auto;
+    height: 1px;
+
+    @include mq(md) {
+        width: 100%;
+        margin-left: 0;
+        padding-right: rem(40);
+    }
+}
+
+.p-about__message {
+    display: flex;
+
+    @include mq(md) {
+        // justify-content: space-between;
+        
+    }
+    // margin-top: rem(25);
+   
+}
+
+.p-about__message-title {
+    padding-top: rem(33);
+   
+    @include mq(md) {
+        width: 16.6%;
+        max-width: rem(210);
+        min-width: rem(210);
+    }
+}
+
+.p-about__message-text {
+    width: 90%; 
+    margin-left: auto;
+    margin-top: rem(25);
+
+    @include mq(md) {
+       width: 100%;
+        margin-left: 0;
+        display: flex;
+    }
+
+}
+
+.p-about__message-left,
+.p-about__message-right {
+    @include mq(md) {
+        // width: calc(50% - #{rem(53) * 1/2});
+        width: 50%;
+    }
+}
+
+.p-about__message-left {
+    @include mq(md) {
+        margin-right: rem(10);
+        padding-right: rem(40);
+    }
+}
+
+.p-about__message-left p {
+    @include mq(md) {
+        width: 100%;
+    }
+}
+
+.p-about__message-right p {
+    @include mq(md) {
+        width: 100%;
+        padding-right: rem(50);
+    }
+}
+
+.p-about__message-ja {
+    @include mq(md) {
+    }
+}
+.p-about__message-en {
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}

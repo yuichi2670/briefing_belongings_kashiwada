@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.l-overlay {
+    display: none!important;
+    height: 100%;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.l-overlay.is-open {
+    display: block!important;
+    transition: all .3s;
+}

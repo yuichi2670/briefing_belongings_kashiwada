@@ -1,0 +1,362 @@
+
+@use "global" as *;
+.p-belongings {
+    margin-top: rem(82);
+}
+
+.p-belongings__inner {
+    padding-bottom: rem(60);
+    padding-left: rem(17);
+    padding-right: rem(17);
+
+    @include mq(md) {
+        padding-left: rem(40);
+        padding-right: rem(40);
+        display: flex;
+        position: relative;
+        padding-top: rem(15);
+        // height: 100%;
+        padding-bottom: rem(97);
+    }
+
+}
+
+.p-belongings__container {
+    @include mq(md) {
+        // width: 65%;
+        padding-left: rem(40);
+        padding-right: rem(30);
+        position: relative;
+    }
+}
+
+// .p-belongings__container::after {
+//     @include mq(md) {
+//         position: absolute;
+//         content: "";
+//         bottom: rem(0);
+//         right: 0;
+//         width: 1px;
+//         height: 100%;
+//         background-color: #000;
+//         z-index: -1;
+//     }
+
+// }
+
+
+.p-belongings__belongings {
+   font-family: $en-belongings-Malaga;
+   font-size: rem(27);
+   font-weight: 700;
+   line-height: normal;
+}
+
+.p-belongings__titleBox {
+    margin-top: rem(43);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.p-belongings__vol {
+    font-family: $en-belongings-Malaga;
+    font-weight: 700;
+    font-size: rem(15);
+}
+
+.p-belongings__title {
+    margin-top: rem(11);
+    font-size: rem(43);
+    font-family: $en-belongings-lapture;
+    font-weight: 400;
+    line-height: calc(44/43);
+    width: 91%;
+
+    @include mq(md) {
+        width: initial;
+        font-size: rem(60);
+    }
+}
+
+.p-belongings__first {
+    margin-top: rem(45);
+
+    @include mq(md) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: rem(125);
+    }
+}
+
+.p-belongings__image {
+    margin-top: rem(45);
+}
+
+.p-belongings__image img {
+    aspect-ratio: 375/478;
+    object-fit: cover;
+
+    @include mq(md) {
+        aspect-ratio: 670/750;
+    }
+}
+
+.p-belongings__image--first {
+    margin: 0 calc(50% - 50vw);
+    margin-bottom: rem(30);
+
+    @include mq(md) {
+        margin: initial;
+        margin-top: rem(39);
+    }
+}
+
+.p-belongings__text {
+    margin-top: rem(87);
+
+    @include mq(md) {
+        margin-top: rem(50);
+    }
+}
+
+.p-belongings__text--first {
+    margin-top: 0;
+
+    @include mq(md) {
+        max-width: rem(455);
+        width: 68%;
+    }
+}
+
+.p-belongings__profile {
+    margin-top: rem(60);
+    padding-left: rem(31);
+    padding-right: rem(31);
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        width: 16.6%;
+        padding-left: 0;
+        padding-right: 0;
+        min-width: rem(210);
+        max-width: rem(210);
+        position: sticky;
+        top: rem(90);
+        height: 100%;
+        margin-top: 0;
+
+        margin-left: initial;
+    margin-right: initial;
+    }
+    
+}
+
+.p-belongings__profile-image {
+    width: 63.4%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    @include mq(md) {
+        margin-top: rem(152);
+    }
+}
+
+.p-belongings__profile-image svg path {
+        // min-width: rem(147);
+        width: 48.69%;
+        // height: rem(130);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.p-belongings__profile-image svg {
+    @include mq(md) {
+        width: rem(147);
+    }
+}
+
+
+
+.p-belongings__profile-text {
+    margin-top: rem(25);
+    font-size: rem(11);
+    font-weight: 500;
+    line-height: normal;
+
+    @include mq(md) {
+        font-size: rem(10);
+        margin-top: rem(27);
+    }
+}
+
+.p-belongings__profile-links {
+    margin-top: rem(25);
+}
+
+.p-belongings__profile-link {
+    width: fit-content;
+    display: block;
+    font-family: $en-belongings-oranienbaum;
+    font-size: rem(12);
+    font-weight: 400;
+}
+
+.p-belongings__profile-link p {
+    background-size: 100% rem(1);/*幅をゼロにしておく*/
+    background-position: 1px 95%;
+    background-repeat: no-repeat;
+    transition: .8s;
+    display: inline;
+    background-image: linear-gradient($black, $black);
+}
+
+.p-belongings__items {
+    margin-top: rem(64);
+
+    @include mq(md) {
+        margin-top: rem(100);
+    }
+}
+
+.p-belongings__picture:not(:first-child) {
+    margin-top: rem(46);
+
+    @include mq(md) {
+        margin-top: rem(87);
+    }
+}
+
+.p-belongings__picture img {
+    aspect-ratio: 345/450;
+    object-fit: cover;
+}
+
+.p-belongings__comment {
+    font-size: rem(12);
+    font-weight: 500;
+    line-height: normal;
+    margin-top: rem(15);
+
+    @include mq(md) {
+        width: 74.6%;
+        
+    }
+}
+
+.p-belongings__comment-en {
+    font-size: rem(13);
+    font-family: $en-font-second;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: rem(15);
+    line-height: calc(23/13);
+
+    @include mq(md) {
+        width: 74.6%;
+        margin-top: calc(#{rem(13)} * (23 / 13));
+        margin-bottom: rem(-27);
+    }
+}
+
+.p-belongings__products {
+    margin-top: rem(54);
+
+    @include mq(md) {
+        width: 18.4%;
+        margin-left: auto;
+        position: sticky;
+        top: rem(90);
+        height: 100%;
+        margin-top: 0;
+        min-width: rem(250);
+        max-width: rem(250);
+        padding-left: rem(30);
+    }
+}
+
+
+
+
+
+.p-belongings__products-title {
+    padding-bottom: rem(10);
+    font-family: $en-belongings-Malaga;
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: normal;
+}
+
+.p-belongings__cards {
+    margin-top: rem(23);
+}
+
+.p-belongings__card:not(:first-child) {
+    margin-top: rem(31);
+
+    @include mq(md) {
+        margin-top: rem(16);
+    }
+}
+
+.p-belongings__card-name {
+    font-size: rem(14);
+    font-family: $en-font-second;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: rem(15);
+
+    @include mq(md) {
+        margin-top: rem(7);
+    }
+}
+
+.p-belongings__card-image {
+    overflow: hidden;
+}
+
+.p-belongings__card-image img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.p-belongings__card-buy {
+    background-size: 100% rem(1);/*幅をゼロにしておく*/
+    background-position: 0 85%;
+    background-repeat: no-repeat;
+    transition: .8s;
+    display: inline;
+    background-image: linear-gradient($black, $black);
+
+    font-size: rem(12);
+    font-weight: 400;
+    font-family: $en-font-second;
+    padding-bottom: rem(2);
+
+    @include mq(md) {
+        background-size: 0% rem(1);
+        display: block;
+        margin-top: rem(4);
+        width: fit-content;
+    }
+}
+
+// マウスオーバー
+.p-belongings__card-link:hover .p-belongings__card-image img {
+    @include mq(md) {
+        transform: scale(1.05);
+        transition: 0.3s all;
+    }
+}
+
+.p-belongings__card-link:hover .p-belongings__card-buy {
+    @include mq(md) {
+        background-size: 100% rem(1);/*幅をゼロにしておく*/
+    }
+}

@@ -1,0 +1,268 @@
+@use "global" as *;
+
+.s-about--last {
+    padding-bottom: rem(100);
+}
+
+.s-about__inner {
+
+}
+
+.s-about__container {
+    padding-left: rem(15);
+    padding-right: rem(15);
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+.s-about__swiper {
+    margin-top: rem(54);
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+.s-about__swiper--melbourne {
+    margin-top: rem(100);
+
+    
+}
+
+.s-about__wrapper--sydney {
+    // background-color: #FFC5BD;
+}
+
+.s-about__slide {
+    position: relative;
+    @include mq(md) {
+       width: 25%;
+    }
+}
+
+.s-about__slide img {
+    aspect-ratio: 309/427;
+    object-fit: cover;
+
+    @include mq(md) {
+        aspect-ratio: 488/674;
+    }
+}
+
+.s-about__slide-text {
+    color: $red;
+    position: relative;
+    z-index: 2;
+}
+
+
+.s-about__contents {
+   margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(100);
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+.s-about__block {
+    display: grid;
+    gap: rem(50);
+    @include mq(md) {
+        width: 50%;
+        padding-right: rem(40);
+        // max-width: rem(940);
+        padding-left: rem(43);
+        gap: rem(26);
+    }
+}
+
+.s-about__images {
+    padding-left: rem(15);
+    padding-right: rem(15);
+
+    @include mq(md) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.s-about__images--melbourne {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.s-about__image:not(:first-child) {
+    margin-top: rem(50);
+}
+
+.s-about__image img {
+    aspect-ratio: 345/511;
+    object-fit: cover;
+}
+
+.s-about__text {
+    padding-left: rem(15);
+    padding-right: rem(15);
+    color: $red;
+    margin-top: rem(87);
+
+    @include mq(md) {
+        width: 50%;
+        padding-left: rem(40);
+        // max-width: rem(940);
+        margin-top: 0;
+        position: sticky;
+        height: 100%;
+        top: rem(90);
+    }
+}
+
+.s-about__text p {
+    @include mq(md) {
+        padding-left: rem(54);
+        padding-right: rem(54);
+    }
+}
+
+.s-about__imageBox {
+    padding-left: rem(40);
+    padding-right: rem(40);
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        // max-width: rem(1135);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: rem(100);
+        padding-left: rew(77);
+        padding-right: rem(77);
+    }
+}
+
+.s-about__imageBox--melbourne {
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
+
+
+
+.s-about__imageBox-item {
+    @include mq(md) {
+    }
+}
+
+.s-about__imageBox-item:not(:first-child) {
+    @include mq(md) {
+        margin-left: rem(35);
+    }
+}
+
+.s-about__imageBox-item--la:not(:first-child) {
+    @include mq(md) {
+        margin-left: rem(0);
+    }
+}
+
+.s-about__imageBox02 {
+    margin-top: rem(50);
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        // max-width: rem(1580);
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        margin-top: rem(100);
+        padding-left: rem(40);
+        padding-right: rem(40);
+    }
+}
+
+.s-about__imageBox02-items {
+    @include mq(md) {
+        width: 50%;
+        padding-right: rem(40);
+        // max-width: rem(940);
+    }
+}
+
+.s-about__imageBox02-image {
+    margin-top: rem(100);
+}
+
+.s-about__image-text {
+    color: $green;
+    font-size: rem(12);
+    line-height: normal;
+    margin-top: rem(10);
+    // padding-left: rem(15);
+    // padding-right: rem(15);
+
+    @include mq(md) {
+        margin-top: rem(8);
+        padding-left: rem(0);
+        padding-right: rem(0);    
+    }
+}
+
+.s-about__image-text--margin {
+    margin-left: rem(25);
+    margin-right: rem(25);
+}
+
+.s-about__image-text a {
+    text-decoration: underline;
+    width: fit-content;
+    // background-image: linear-gradient($green, $green);
+    // color: $white;
+    // background-size: 100% 90%;
+    // background-position: 0 100%;
+    // background-repeat: no-repeat;
+    // padding: 0 rem(5);
+    // font-family: $en-font-second;
+}
+
+/*======================================================
+    20240422~追加
+======================================================*/
+
+.s-about__image--small {
+    margin-left: rem(25);
+    margin-right: rem(25);
+}
+
+.s-about__image--large {
+    @include mq(md) {
+        padding-left: rem(40);
+        padding-right: rem(40);
+        display: block;
+    }
+}
+
+.s-about__image--large img {
+    @include mq(md) {
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.s-about__picture {
+    @include mq(md) {
+        margin-top: rem(90);
+    }
+}

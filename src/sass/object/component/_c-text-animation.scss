@@ -1,0 +1,13 @@
+@use "global" as *;
+
+
+.c-text-animation .word {
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.05;
+    
+}
+.c-text-animation .word--text {
+    display: inline-block;
+    line-height: 1.05;
+}

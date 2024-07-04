@@ -1,0 +1,112 @@
+@use "global" as *;
+
+.p-interview-main {
+    margin-top: rem(56);
+
+    @include mq(md) {
+        margin-top: rem(53);
+    }
+}
+.p-interview-main__inner {
+    @include mq(md) {
+        padding-left: rem(40);
+        padding-right: rem(40);
+    }
+}
+.p-interview-main__container {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 730fr 432fr;
+        gap: rem(38);
+    }
+}
+.p-interview-main__image {
+    
+}
+.p-interview-main__item {
+    margin-top: rem(74);
+    padding-left: rem(15);
+    padding-right: rem(15);
+
+    @include mq(md) {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.p-interview-main__number {
+    font-size: rem(15);
+    font-family: $en-font-second;
+    font-weight: 600;
+}
+.p-interview-main__title {
+    margin-top: rem(9);
+    font-size: rem(47);
+    font-family: $en-font-second;
+    font-weight: 400;
+    line-height: calc(52/48);
+
+    @include mq(md) {
+        font-size: rem(60);
+        line-height: 1;
+        width: 92%;
+    }
+}
+.p-interview-main__name-box {
+    margin-top: rem(31);
+
+    @include mq(md) {
+        margin-top: rem(66);
+    }
+}
+.p-interview-main__name {
+    font-size: rem(11);
+    font-weight: 600;
+    line-height: calc(17/11);
+    font-family: $en-font-second;
+}
+.p-interview-main__languages {
+    display: flex;
+    margin-top: rem(46);
+    // position: fixed;
+    
+
+    @include mq(md) {
+        justify-content: end;
+        margin-right: rem(-15);
+        // right: rem(40);
+        // left: initial;
+    }
+}
+.p-interview-main__languages[data-sticky='true'] {
+    position: fixed;
+    // top: rem(80);
+    top: 0;
+    left: rem(15);
+    z-index: 10;
+    margin-top: rem(80);
+
+    @include mq(md) {
+        top: 0;
+        left: initial;
+        margin-right: rem(0);
+        right: rem(40);
+        margin-top: rem(80);
+    }
+}
+.p-interview-main__language {
+    text-transform: uppercase;
+    font-size: rem(20);
+    font-family: $en-font-second;
+    height: rem(24);
+    line-height: rem(24);
+    border-radius: rem(27);
+    border: 1px solid;
+    width: rem(60);
+    text-align: center;
+    display: block;
+}
+.p-interview-main__language:not(:first-child) {
+    margin-left: rem(3);
+}

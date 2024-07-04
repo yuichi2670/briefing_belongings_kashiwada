@@ -1,0 +1,248 @@
+@use "global" as *;
+
+.s-column {
+    background-color: $white;
+
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
+
+.s-column--melbourne {
+    margin-top: rem(10);
+    @include mq(md) {
+        margin-top: rem(22);
+    }
+}
+
+.s-column__inner {
+    padding-top: rem(50);
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+        max-width: rem(1280);
+        padding-top: rem(60);
+    }
+}
+
+.s-column__container {
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.s-column__head {
+    color: $red;
+    text-align: center;
+}
+
+.s-column__title {
+    font-family: $en-font-first;
+    font-weight: 900;
+    line-height: normal;
+    font-size: rem(16);
+}
+
+.s-column__tags {
+    @include mq(md) {
+        margin-top: rem(6);
+    }
+}
+
+.s-column__tag {
+    font-size: rem(15);
+    font-weight: 600;
+    line-height: normal;
+    font-family: $en-font-second;
+    font-weight: 400;
+}
+
+.s-column__map {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        width: 50%;
+        // max-width: rem(560);
+        padding-right: rem(45);
+        margin-top: 0;
+    }
+}
+
+.s-column__map img {
+    @include mq(md) {
+        aspect-ratio: 580/680;
+        object-fit: cover;
+        height: 100%;
+        min-height: rem(680);
+    }
+}
+
+.s-column__items {
+    @include mq(md) {
+        width: 50%;
+        // max-width: rem(498);
+        // margin-left: auto;
+        // margin-right: auto;
+        padding-left: rem(45);
+        // height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+.s-column__items--melbourne {
+    @include mq(md) {
+        // max-width: rem(498);
+    }
+}
+
+.s-column__comment {
+    font-size: rem(20);
+    font-weight: 500;
+    line-height: calc(32/20);
+    color: $red;
+    margin-top: rem(40);
+}
+
+.s-column__comment span {
+    font-family: $en-font-second;
+    font-weight: 300;
+}
+
+.s-column__comment--melbourne {
+
+    @include mq(md) {
+        margin-top: rem(75);
+    }
+}
+
+.s-column__text {
+    color: $red;
+    margin-top: rem(25);
+    @include mq(md) {
+        max-width: rem(498);
+    }
+}
+
+.s-column__profile {
+    margin-top: rem(30);
+    // margin-top: 0;
+}
+
+.s-column__profile--melbourne {
+    margin-top: rem(45);
+    @include mq(md) {
+        // margin-top: rem(60);
+        margin-top: 0;
+    }
+}
+
+.s-column___names {
+    color: $red;
+    // font-family: $en-font-third;
+    font-family: $en-font-second;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.s-column__name {
+    font-size: rem(15);
+}
+
+.s-column__name span {
+    font-family: $en-font-second;
+}
+
+.s-column__details {
+    font-size: rem(12);
+}
+
+.s-column__line {
+    margin-top: rem(15);
+}
+
+.s-column__line a {
+    color: $red;
+    // font-family: $en-font-third;
+    font-family: $en-font-second;
+    font-weight: 400;
+    line-height: normal;
+    font-size: rem(12);
+    display: block;
+    width: fit-content;
+}
+
+.s-column__line--melbourne {
+    display: flex;
+}
+
+.s-column__line--melbourne02 {
+    display: block;
+}
+
+
+.s-column__line--melbourne a:first-child {
+    padding-right: rem(10);
+}
+
+.s-column__line--melbourne a:not(:first-child) {
+    padding-left: rem(10);
+    padding-right: rem(10);
+}
+
+
+
+.s-column__line--melbourne p {
+    background-size: 100% rem(1);/*幅をゼロにしておく*/
+    background-position: 1px 82%;
+    background-repeat: no-repeat;
+    transition: .8s;
+    display: inline;
+    background-image: linear-gradient($green, $green);
+}
+
+.s-column__line--melbourne p:hover {
+    @include mq(md) {
+        background-size: 0% rem(1);/*幅をゼロにしておく*/
+    }
+}
+
+
+/*======================================================
+    laページ
+======================================================*/
+.s-column__line--la {
+    display: flex;
+}
+
+.s-column__line--la02 {
+    display: block;
+}
+
+
+.s-column__line--la a:first-child {
+    padding-right: rem(10);
+}
+
+.s-column__line--la a:not(:first-child) {
+    padding-left: rem(10);
+    padding-right: rem(10);
+}
+
+
+
+.s-column__line--la h4 {
+    background-size: 100% rem(1);/*幅をゼロにしておく*/
+    background-position: 1px 82%;
+    background-repeat: no-repeat;
+    transition: .8s;
+    display: inline;
+    background-image: linear-gradient($orange, $orange);
+}
+
+.s-column__line--la h4:hover {
+    @include mq(md) {
+        background-size: 0% rem(1);/*幅をゼロにしておく*/
+    }
+}

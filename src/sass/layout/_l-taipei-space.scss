@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-taipei-space {
+    margin-top: rem(50);
+}
+
+.l-taipei-space--pc {
+    @include mq(md) {
+        margin-top: rem(150)!important;
+    }
+}

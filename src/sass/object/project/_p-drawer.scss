@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.p-drawer {
+    display: none;
+    position: relative;
+    z-index: 10;
+    padding-left: rem(15);
+    padding-right: rem(15);
+    transition: all .3s;
+
+}
+
+.p-drawer.is-open {
+    display: block;
+
+}
+
+.p-drawer__lists {
+    max-width: rem(220);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-drawer__list {
+    color: #BFBFBF;
+    font-size: rem(24);
+    font-family: $en-font-second;
+    line-height: 1;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .5s;
+    
+    // display: none;
+}
+
+.p-drawer__list.is-visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.p-drawer__list:not(:first-child) {
+    margin-top: rem(40);
+}
+
+.p-drawer__other {
+    padding-left: rem(15);
+    padding-right: rem(15);
+    padding-bottom: rem(14);
+    display: none;
+    transition: all .3s;
+    position: relative;
+    z-index: 1;
+}
+
+.p-drawer__other.is-open {
+    display: block;
+}
+
+.p-drawer__logo {
+    margin-top: rem(16);
+    line-height: 1;
+}
+
+.p-drawer__text a {
+    font-family: $en-font-second;
+}

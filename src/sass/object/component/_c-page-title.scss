@@ -1,0 +1,32 @@
+@use "global" as *;
+.c-page-title {
+    margin-top: rem(13);
+    font-size: rem(60);
+    font-family: $en-font-first;
+    font-weight: 400;
+    letter-spacing: rem(-3);
+
+    @include mq(md) {
+        font-size: rem(100);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1220px){
+    .c-page-title--melbourne {
+        font-size: rem(90);
+    }
+}
+
+.c-page-title--la {
+    letter-spacing: rem(-3.6);
+
+    @include mq(md) {
+        letter-spacing: rem(-6);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+    .c-page-title--la {
+        font-size: rem(90);
+    }
+}

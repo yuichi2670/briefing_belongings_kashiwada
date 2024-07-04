@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.l-margin {
+    margin-top: rem(50);
+}
+
+.l-margin--first {
+    margin-top: rem(47);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}

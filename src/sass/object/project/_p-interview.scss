@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.p-interview {
+    margin-top: rem(148);
+    // padding-bottom: rem(83);
+
+    @include mq(md) {
+        margin-top: rem(118);
+    }
+}
+
+.p-interview__title {
+    font-size: rem(20);
+    font-family: $en-font-second;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    letter-spacing: rem(.4);
+
+    @include mq(md) {
+        font-size: rem(34);
+        letter-spacing: rem(.68);
+    }
+}

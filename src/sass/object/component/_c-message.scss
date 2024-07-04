@@ -1,0 +1,110 @@
+@use "global" as *;
+
+.c-message {
+    font-size: rem(14);
+}
+
+.c-message__title {
+    font-family: $en-font-text;
+    font-size: rem(13);
+    writing-mode: vertical-lr;
+
+    @include mq(md) {
+        writing-mode: initial;
+    }
+}
+
+.c-message__ja {
+    line-height: normal;
+    font-size: rem(14);
+}
+
+.c-message__ja--belongings {
+    font-weight: 500;
+    font-size: rem(18);
+
+    @include mq(md) {
+        font-weight: 600;
+        font-size: rem(15);
+    }
+}
+
+.c-message__ja--belongings02 {
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.c-message__ja span {
+    font-family: $en-font-second;
+    font-weight: 300;
+}
+
+.c-message__en {
+    margin-top: rem(30);
+    line-height: normal;
+    font-family: $en-font-second;
+    font-weight: 400;
+    font-size: rem(14);
+
+    @include mq(md) {
+        margin-top: 0;
+        line-height: calc(25/15);
+        margin-top: rem(25);
+        font-size: rem(15);
+    }
+}
+
+.c-message__en--top  {
+    font-size: rem(13);
+
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}
+
+.c-message__en--belongings {
+    font-family: $en-font-second;
+    line-height: calc(28/19);
+    margin-top: rem(25);
+    font-size: rem(19);
+    font-weight: 600;
+
+    @include mq(md) {
+        font-size: rem(16);
+        line-height: calc(27/16);
+    }
+}
+
+.c-message__en--belongings02 {
+    line-height: calc(23/14);
+    margin-top: rem(25);
+    font-size: rem(14);
+}
+
+.c-message__en--column {
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}
+
+.c-message__name {
+    font-size: rem(12);
+    font-family: $en-belongings-oranienbaum;
+    font-weight: 400;
+    margin-top: rem(13);
+
+    @include mq(md) {
+        margin-top: rem(58);
+    }
+}
+
+
+/*======================================================
+    20240423~追加css
+======================================================*/
+
+.c-message__en span {
+    color: $red;
+}

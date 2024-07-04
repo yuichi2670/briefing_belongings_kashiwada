@@ -1,0 +1,131 @@
+@use "global" as *;
+
+.p-footer {
+    background-color: #000;
+}
+
+.p-footer__inner {
+    padding-top: rem(45);
+
+    @include mq(md) {
+        max-width: initial;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-footer__space {
+    @include mq(md) {
+        width: 16.6%;
+        max-width: rem(210);
+        min-width: rem(210);
+    }
+}
+
+.p-footer__container {
+    @include mq(md) {
+        width: calc(83.8% - #{rem(40)});
+        margin-left: rem(40);
+    }
+}
+
+.p-footer__title {
+    color: $white;
+    font-size: rem(29);
+    font-weight: 900;
+    font-family: $en-font-first;
+    line-height: calc(31 / 29);
+    width: 88%;
+
+    @include mq(md) {
+        font-size: rem(68);
+        width: 100%;
+        max-width: rem(894);
+        line-height: calc(84 / 68);
+    }
+}
+
+.p-footer__nav {
+}
+
+.p-footer__lists {
+    margin-top: rem(25);
+
+    @include mq(md) {
+        display: flex;
+        margin-top: rem(40);
+    }
+}
+
+.p-footer__list {
+
+    // display: none;
+
+    @include mq(md) {
+        padding-left: rem(29);
+        padding-right: rem(29);
+    }
+}
+
+.p-footer__list:first-child {
+    @include mq(md) {
+        padding-left: 0;
+    }
+}
+
+.p-footer__list:last-child {
+    @include mq(md) {
+        padding-right: 0;
+    }
+}
+
+.p-footer__list:not(:first-child) {
+    margin-top: rem(10);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.p-footer__list a {
+    display: block;
+    color: $white;
+    font-family: $en-font-second;
+    font-weight: 400;
+
+    @include mq(md) {
+        font-size: rem(15);
+    }
+}
+
+.p-footer__other {
+    padding-left: rem(15);
+    padding-bottom: rem(28);
+    margin-top: rem(60);
+    @include mq(md) {
+        padding-left: rem(40);
+        margin-top: rem(155);
+    }
+}
+
+.p-footer__other a {
+    font-family: $en-font-second;
+    @include mq(md) {
+        font-size: rem(12);
+    }
+}
+
+.p-footer__text {
+   
+    color: $white;
+}
+
+.p-footer__logo {
+    margin-top: rem(20);
+    width: rem(73);
+    display: block;
+
+    @include mq(md) {
+        width: rem(110);
+    }
+}
