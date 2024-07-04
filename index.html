@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <!-- meta情報 -->
+        <title>BRIEFING Magazine | ブリーフィングマガジン</title>
+        <meta name="description" content="Welcome to BRIEFING MAGAZINE.ブリーフィングマガジンはスタイルのある人々の旅路や持ち物、哲学を通してBRIEFINGの世界観をお届けします。">
+        <!-- 本番反映時には外すこと -->
+        <meta name="robots" content="noindex">
+        <!-- ファビコン -->
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.briefing-usa.com/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="https://www.briefing-usa.com/favicon.ico">
+        <!-- css 本番環境に反映する際は-->
+        <link rel="stylesheet" href="./css/styles.css?ver=1.0.4">
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'oxs4wpg',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
+    </head>
+    <body>
+        <header class="p-header l-header js-header" id="js-header-height">
+            <div class="p-header__inner">
+                <div class="p-header__container">
+                    <h1 class="p-header__logo c-marker js-marker-bold">
+                        <a href="/">
+                            BRIEFING
+                            <span> Magazine</span>
+                        </a>
+                    </h1>
+                    <!-- 現在メニューがないため公開時には一旦非表示にすること start -->
+                    <div class="p-header__contents c-marker js-marker-light2">
+                        <nav class="p-header__nav u-desktop">
+                            <ul class="p-header__items">
+                                <li class="p-header__item">
+                                    <a class="js-current" href="#travel">Travel Journal</a>
+                                </li>
+                                <li class="p-header__item">
+                                    <a class="js-current" href="#belongings">Belongings</a>
+                                </li>
+                                <li class="p-header__item"><a class="js-current" href="#interviews">Essays & Interviews</a></li>
+                                <!-- <li class="p-header__item">
+                                    <a href="">City Guide</a>
+                                </li> -->
+                                <!-- <li class="p-header__item">
+                                    <a href="">Scene</a>
+                                </li> -->
+                                <!-- <li class="p-header__item">
+                                    <a href="">About</a>
+                                </li> -->
+                            </ul>
+                        </nav>
+                        <div class="p-header__logo-pc c-logo u-desktop">
+                            <a href="https://www.briefing-usa.com">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="72"
+                                    height="10"
+                                    viewBox="0 0 72 10"
+                                    fill="none"
+                                >
+                                    <path d="M9.78668 7.93322C9.78668 9.28745 9.26636 10.0019 7.42412 10.0019H0C0.296009 9.4031 0.224305 9.05988 0.266592 8.29136V1.72542C0.266592 0.570789 0.2813 0.669651 0 0H7.42412C9.18179 0 9.7591 0.712554 9.78668 2.06864V3.21022C9.78668 4.36672 9.20937 4.7659 7.81757 4.79388C9.26452 5.03637 9.75726 5.18 9.78668 6.27681V7.93322ZM6.60964 3.43966V2.2272C6.60964 1.82802 6.60964 1.65641 6.04888 1.65641H3.73964V4.01045H6.04888C6.49748 4.01045 6.60964 3.81086 6.60964 3.43966ZM6.60964 7.78959V6.22085C6.60964 5.84965 6.60964 5.69297 6.04888 5.66499H3.73964V8.34732H6.04888C6.46991 8.34732 6.55448 8.30442 6.60964 7.79146" fill="#AA182C"/>
+                                    <path d="M21.1306 10H17.2623L15.6039 5.66312H14.5504V8.28763C14.5504 8.90132 14.4382 9.10091 14.8335 10H10.8126C11.1086 9.39937 11.0369 9.05801 11.0792 8.28763V1.72542C11.0792 1.04085 11.1343 0.555866 10.728 0H18.1816C19.783 0 20.5147 0.527887 20.5423 2.21041V4.05148C20.5423 5.29192 20.136 5.60716 19.1523 5.66499L20.3897 8.47603C20.6563 9.0748 20.9376 9.74445 21.1343 10.0019M17.3524 3.43966V2.2272C17.3524 1.82802 17.3671 1.68625 16.8045 1.65641H14.5522V4.00858H16.8045C17.2549 4.00858 17.323 3.95262 17.3524 3.43966Z" fill="#AA182C"/>
+                                    <path d="M26.1758 10H22.1255C22.4068 9.42921 22.3645 8.65883 22.4068 8.28763V1.72542C22.4068 0.498041 22.4491 0.770379 22.1255 0H26.1758C25.9368 0.512964 25.8467 0.680843 25.8798 1.65827V8.33986C25.8798 8.33986 25.8449 9.36952 26.1758 10Z" fill="#AA182C"/>
+                                    <path d="M35.7327 8.07499L35.4238 10H27.4224C27.7184 9.40123 27.6485 9.05801 27.6908 8.28763V1.72542C27.6908 0.570789 27.7037 0.669651 27.4224 0H35.2841L35.5654 1.92501C35.5654 1.92501 34.3703 1.65454 33.9897 1.65454H31.1638V4.00858H33.6238C33.975 4.00858 34.2287 4.12237 35.1995 3.73811V5.92054C35.1995 5.92054 33.9768 5.67805 33.6238 5.66499H31.1638V8.34732H34.1736C34.7785 8.34732 34.749 8.47603 35.7327 8.07685" fill="#AA182C"/>
+                                    <path d="M44.5317 1.92501C44.1383 1.81123 43.618 1.68252 42.9708 1.65454H40.1449V4.00858H42.6049C42.9561 4.00858 43.2098 4.12237 44.1787 3.73811V5.92054C44.1787 5.92054 42.9561 5.67991 42.6049 5.66499H40.1449V8.2895C40.1449 8.90319 40.0328 9.10278 40.4244 10.0019H36.4053C36.6994 9.4031 36.6296 9.05988 36.67 8.2895V1.72542C36.67 0.570789 36.6866 0.669651 36.4053 0H44.2651L44.5317 1.92501Z" fill="#AA182C"/>
+                                    <path d="M49.3951 10H45.3447C45.626 9.42921 45.5837 8.65883 45.626 8.28763V1.72542C45.626 0.498041 45.6683 0.770379 45.3447 0H49.3951C49.1542 0.512964 49.1009 1.29827 49.1009 1.72542V8.28763C49.1009 8.90132 48.9998 9.10091 49.3951 10Z" fill="#AA182C"/>
+                                    <path d="M61.0182 0C60.8785 0.214512 60.6965 0.328297 60.6965 1.79817V10.0019H56.1957L52.4413 1.72729L52.4119 8.20369C52.4119 8.80433 52.5388 9.64559 52.7649 10.0019H50.5825C50.8509 9.58776 50.8785 9.46092 50.9079 8.20369V1.59858C50.9079 0.542809 50.8657 0.442082 50.5825 0H55.4363L59.1502 8.16079V1.59858C59.1502 0.669651 59.1502 0.457004 58.8395 0H61.0164H61.0182Z" fill="#AA182C"/>
+                                    <path d="M71.5626 8.03022V5.5624C71.5921 4.76404 71.6215 4.63346 71.9984 4.00672H66.2326V5.84779C66.2326 5.84779 66.6555 5.66126 66.7952 5.66126H68.0896V7.70006C68.0749 8.144 67.8634 8.34359 67.413 8.34359H66.2602C65.7987 8.32867 65.5726 8.12721 65.5726 7.70006V2.29808C65.5726 1.86905 65.7987 1.65454 66.2602 1.65454H68.4665H69.9539C70.6011 1.68252 71.1214 1.81123 71.5148 1.92501L71.2501 0H64.4069C62.8589 0.0279799 62.1143 0.884163 62.1143 2.93788V7.06025C62.1418 9.2147 62.9306 10 64.4069 10H67.47C68.4279 9.97202 68.54 9.74259 68.7643 9.07107L68.8783 10H71.9432C71.5332 9.37325 71.5626 9.28745 71.5626 8.03022Z" fill="#AA182C"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <button id="drawer__icon" class="c-hamburger js-hamburger u-mobile">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- 現在メニューがないため公開時には一旦非表示にすること end -->
+                </div>
+                <!-- 現在メニューがないため公開時には一旦非表示にすること start -->
+                <div class="p-drawer js-nav u-mobile">
+                    <div class="p-drawer__wrapper">
+                        <div class="p-drawer__nav">
+                            <ul class="p-drawer__lists">
+                                <li class="p-drawer__list js-menu">
+                                    <a href="#travel">Travel Journal</a>
+                                </li>
+                                <li class="p-drawer__list js-menu">
+                                    <a href="#belongings">Belongings</a>
+                                </li>
+                                <li class="p-drawer__list js-menu">
+                                    <a href="#interviews">Essays & Interviews</a>
+                                </li>
+                                <!-- <li class="p-drawer__list js-menu">
+                                    <a href="">City Guide</a>
+                                </li> -->
+                                <!-- <li class="p-drawer__list js-menu">
+                                    <a href="">Scene</a>
+                                </li> -->
+                                <!-- <li class="p-drawer__list js-menu">
+                                    <a href="">About</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-drawer__other js-drawer-other">
+                    <div class="p-drawer__text">
+                        <a href="https://www.instagram.com/briefing_official/">@briefing_official</a>
+                    </div>
+                    <div class="c-logo p-drawer__logo">
+                        <a href="https://www.briefing-usa.com">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="73"
+                                height="11"
+                                viewBox="0 0 73 11"
+                                fill="none"
+                            >
+                                <path d="M9.66708 8.37024C9.66708 9.70675 9.15323 10.4108 7.33501 10.4108H0C0.290803 9.81836 0.223043 9.48066 0.26257 8.72226V2.24579C0.26257 1.10676 0.276686 1.20407 0 0.542969H7.33219C9.06853 0.542969 9.63885 1.24699 9.66426 2.5835V3.71108C9.66426 4.85298 9.09394 5.24506 7.71898 5.27368C9.15041 5.51408 9.63602 5.65431 9.66426 6.73897V8.37311L9.66708 8.37024ZM6.53036 3.93717V2.7409C6.53036 2.34596 6.53036 2.17711 5.97416 2.17711H3.69574V4.50097H5.97416C6.41743 4.50097 6.53036 4.3035 6.53036 3.93717ZM6.53036 8.23001V6.68173C6.53036 6.31541 6.53036 6.16086 5.97416 6.13224H3.69574V8.7795H5.97416C6.38919 8.7795 6.47389 8.73657 6.53036 8.23001Z" fill="#AA182C"/>
+                                <path d="M20.8696 10.4108H17.0496L15.4121 6.13224H14.3703V8.72226C14.3703 9.32898 14.2602 9.52359 14.647 10.4108H10.6745C10.9653 9.81836 10.8976 9.48066 10.9371 8.72226V2.24579C10.9371 1.57039 10.9936 1.09245 10.5898 0.542969H17.9503C19.5342 0.542969 20.2541 1.06383 20.2823 2.72373V4.54103C20.2823 5.76592 19.8814 6.07501 18.9074 6.13224L20.1299 8.90542C20.3953 9.49497 20.672 10.1589 20.8668 10.4108M17.1315 3.93431V2.73804C17.1315 2.3431 17.1456 2.20287 16.5894 2.17425H14.3646V4.4981H16.5894C17.0327 4.4981 17.1033 4.44087 17.1315 3.93431Z" fill="#AA182C"/>
+                                <path d="M25.8503 10.4108H21.8496C22.1291 9.84698 22.0868 9.08572 22.1291 8.72226V2.24579C22.1291 1.03521 22.1715 1.30137 21.8496 0.542969H25.8503C25.6131 1.04952 25.5256 1.21265 25.5595 2.17997V8.77377C25.5595 8.77377 25.5256 9.78974 25.8503 10.4136" fill="#AA182C"/>
+                                <path d="M35.2914 8.51048L34.9865 10.4108H27.084C27.3748 9.81836 27.307 9.48066 27.3494 8.72226V2.24579C27.3494 1.10676 27.3635 1.20407 27.084 0.542969H34.8481L35.1248 2.44327C35.1248 2.44327 33.9447 2.17425 33.5692 2.17425H30.7769V4.4981H33.2078C33.5551 4.4981 33.8063 4.60972 34.7634 4.23195V6.38695C34.7634 6.38695 33.5551 6.14655 33.2078 6.13511H30.7769V8.78236H33.7499C34.3456 8.78236 34.3202 8.90828 35.2914 8.5162" fill="#AA182C"/>
+                                <path d="M43.9848 2.44327C43.5952 2.32879 43.0814 2.20287 42.4433 2.17425H39.6539V4.4981H42.0847C42.432 4.4981 42.6805 4.60972 43.6404 4.23195V6.38695C43.6404 6.38695 42.432 6.14655 42.0847 6.13511H39.6539V8.72512C39.6539 9.33184 39.5409 9.52645 39.9305 10.4136H35.9609C36.2517 9.82122 36.184 9.48352 36.2235 8.72512V2.24579C36.2235 1.10676 36.2376 1.20407 35.9609 0.542969H43.7251L43.9905 2.44327H43.9848Z" fill="#AA182C"/>
+                                <path d="M48.7878 10.4108H44.7871C45.0638 9.84698 45.0243 9.08572 45.0638 8.72226V2.24579C45.0638 1.03521 45.1061 1.30137 44.7871 0.542969H48.7878C48.5506 1.04952 48.497 1.8251 48.497 2.24579V8.72226C48.497 9.32898 48.3981 9.52359 48.7878 10.4108Z" fill="#AA182C"/>
+                                <path d="M60.2661 0.542969C60.1277 0.754749 59.9471 0.866362 59.9471 2.31734V10.4136H55.5031L51.7961 2.24866L51.7679 8.63926C51.7679 9.23167 51.8921 10.0616 52.1151 10.4136H49.9609C50.2263 10.0044 50.2517 9.87846 50.2828 8.63926V2.11987C50.2828 1.07814 50.2404 0.977976 49.9609 0.542969H54.7521L58.4196 8.59633V2.11987C58.4196 1.20407 58.4196 0.992286 58.1119 0.542969H60.2633H60.2661Z" fill="#AA182C"/>
+                                <path d="M70.6818 6.03125C70.71 5.24423 70.7383 5.11545 71.1138 4.49728H65.4191V6.31458C65.4191 6.31458 65.837 6.13142 65.9753 6.13142H67.2543V8.14333C67.2402 8.5812 67.0312 8.77581 66.588 8.77581H65.4502C64.9928 8.7615 64.7697 8.56403 64.7697 8.14333V2.80876C64.7697 2.38807 64.9928 2.17629 65.4502 2.17629H69.0753C69.2052 2.18201 69.7077 2.17629 69.7077 2.17629C69.7077 2.17629 69.6767 2.03891 69.6767 1.91013C69.6767 1.36923 69.863 0.902743 70.1736 0.556454V0.542145H63.6178C62.0876 0.570764 61.3535 1.41502 61.3535 3.44124V7.51085C61.3817 9.63724 62.1582 10.4128 63.6178 10.4128H66.6444C67.5903 10.3842 67.7004 10.1581 67.9234 9.49701L68.0363 10.4128H71.0629C70.6592 9.79178 70.6874 9.70879 70.6874 8.46959V6.03412L70.6818 6.03125Z" fill="#AA182C"/>
+                                <path d="M71.3761 2.65382H71.0571V1.13702H71.6161C72.0029 1.13702 72.2316 1.24864 72.2316 1.59492C72.2316 1.87539 72.0678 1.97556 71.8702 1.98987L72.2513 2.65382H71.873L71.5286 2.01562H71.3761V2.65382ZM71.6584 1.76091C71.8024 1.76091 71.8871 1.7323 71.8871 1.56344C71.8871 1.40604 71.7205 1.39459 71.602 1.39459H71.3789V1.76091H71.6613H71.6584ZM71.6076 3.30634C70.8679 3.30634 70.2129 2.78833 70.2129 1.89829C70.2129 1.00824 70.8707 0.490234 71.6076 0.490234C72.3445 0.490234 73.0023 1.00824 73.0023 1.89829C73.0023 2.78833 72.3445 3.30634 71.6076 3.30634ZM71.6076 0.81649C71.0571 0.81649 70.611 1.24864 70.611 1.89829C70.611 2.54793 71.0571 2.98294 71.6076 2.98008C72.1469 2.98294 72.6014 2.54793 72.6014 1.89829C72.6014 1.24864 72.1469 0.81649 71.6076 0.81649Z" fill="#AA182C"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="l-overlay js-overlay u-mobile"></div>
+                <!-- 現在メニューがないため公開時には一旦非表示にすること end -->
+            </div>
+        </header>
+        <section class="p-main">
+            <div class="p-main__inner l-inner">
+                <div class="p-main__container">
+                    <div class="p-main__image js-fade">
+                        <img class="u-mobile" src="./images/top/main-sp.jpg" alt="メイン画像">
+                        <img class="u-desktop" src="./images/top/main-pc.jpg" alt="メイン画像">
+                    </div>
+                    <div class="p-main__line c-marker js-marker-light u-mobile"></div>
+                    <h2 class="p-main__title c-text-animation js-text02 u-desktop">
+                        Wake Up
+                        <br class="br-pc">
+                        Imagination and
+                        <br class="br-pc">
+                        Creativity.
+                    </h2>
+                    <h2 class="p-main__title p-main__title--pc c-text-animation js-text u-mobile">
+                        Wake Up
+                        <br class="br-pc">
+                        Imagination and
+                        <br class="br-pc">
+                        Creativity.
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="p-about">
+            <div class="p-about__inner l-inner">
+                <div class="p-about__message c-message">
+                    <h3 class="p-about__message-title c-message__title js-fade">Message</h3>
+                    <div class="p-about__items">
+                        <div class="p-about__line js-marker-light c-marker"></div>
+                        <div class="p-about__message-text">
+                            <div class="p-about__message-left">
+                                <p class="p-about__message-ja c-message__ja js-fade">
+                                    BRIEFING is LIFESTYLE.　私達はUSA製のミリタリズムに端を発するクオリティとクラフツマンシップを根底に、今でも日常を支えるプロダクトを探求し続けています。限りなくタフ、そして究極のベーシックであることで、アウトドアとタウンを難なく横断し、アクティブでクリエイティブな人々の人生にそっと寄り添う。ここでは、そんなスタイルのある人々の旅路や持ち物、哲学を通してBRIEFINGの世界観をお届けします。目の前を高速で通り過ぎる咀嚼しきれないノイズではなく、喧騒を離れてじっくり没頭できるストーリーを。
+                                    <br class="br-sp">
+                                    そして、それぞれの想像力を掻き立て、それが新たな創造性に繋がることを願って。
+                                    <br>
+                                    Greetings！ Welcome to BRIEFING MAGAZINE.
+                                </p>
+                            </div>
+                            <div class="p-about__message-right">
+                                <p class="p-about__message-en c-message__en c-message__en--top js-fade">BRIEFING is a lifestyle. Founded on the principles of USA military standard quality and craftsmanship, we continue to develop products that support modern everyday life. By being extremely tough and pushing the limits of the basics, our products effortlessly traverse the outdoors and the town, and are the perfect companions for an active and creative life. Here, we will showcase active and creative lifestyles that express the worldview of BRIEFING through their journeys, belongings, and philosophies. These immersive stories will stop time and transport you away from the hustle and bustle of daily. We hope that it will encourage imagination and lead to new creativity.
+                                    <br>Greetings! Welcome to BRIEFING MAGAZINE.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="p-journal" id="travel">
+        <div class="p-journal__inner l-inner">
+            <div class="p-journal__container l-sp-container">
+                <div class="p-journal__titleBox js-fade">
+                    <h2 class="p-journal__title u-desktop">Travel Journal</h2>
+                </div>
+                <div class="p-journal__contents">
+                    <p class="p-journal__comment js-fade">Focus on the creator’s travel.</p>
+                    <div class="p-journal__box">
+                        <div class="p-journal__titleBox js-fade">
+                            <h2 class="p-journal__title u-mobile">Travel Journal</h2>
+                        </div>
+                        <ul class="p-journal__cards">
+                            <li class="p-journal__card js-fade ">
+                                <a href="./la.html" class="p-journal__link">
+                                    <div class="p-journal__image">
+                                        <img src="./images/top/los_angeles.jpg" alt="los angeles">
+                                        <h3 class="p-journal__imageTitle p-journal__text--la">Los Angeles</h3>
+                                    </div>
+                                    <p class="p-journal__small p-journal__text--la">Once in a Lifetime vol.4</p>
+                                    <p class="p-journal__middle p-journal__text--la">
+                                        The Place Where Artists
+                                        <br>
+                                        Intersect
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="p-journal__card js-fade">
+                                <a href="/briefing/taipei.html" class="p-journal__link">
+                                    <div class="p-journal__image">
+                                        <img src="./images/top/taipei.jpg" alt="taipei">
+                                        <h3 class="p-journal__imageTitle p-journal__text--taipei">Taipei</h3>
+                                    </div>
+                                    <p class="p-journal__small p-journal__text--taipei">Once in a Lifetime vol.3</p>
+                                    <p class="p-journal__middle p-journal__text--taipei">The Place That <br>
+                                        Stimulates The Senses</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-journal p-journal--belongings" id="belongings">
+        <div class="p-journal__inner p-journal__inner--belongings l-inner">
+            <div class="p-journal__container l-sp-container">
+                <div class="p-journal__titleBox js-fade">
+                    <h2 class="p-journal__title p-journal__title--belongings u-desktop">Belongings</h2>
+                </div>
+                <div class="p-journal__contents">
+                    <p class="p-journal__comment js-fade">The way one packs reflects their life.</p>
+                    <div class="p-journal__box p-journal__box--belongings">
+                        <div class="p-journal__titleBox js-fade">
+                            <h2 class="p-journal__title p-journal__title--belongings u-mobile">Belongings</h2>
+                        </div>
+                        <ul class="p-journal__cards">
+                            <li class="p-journal__card js-fade">
+                                <a href="./belongings_kashiwada.html" class="p-journal__link">
+                                    <div class="p-journal__image">
+                                        <img src="./images/top/belongings_kashiwada.jpg" alt="belongings_kashiwada">
+                                    </div>
+                                    <p class="p-journal__small p-journal__small--belongings p-journal__text--black">How to pack for a travel vol.2</p>
+                                    <p class="p-journal__middle p-journal__middle--belongings  p-journal__middle--black">How Photographer Tetsuo Kashiwada
+                                        <br>Packs for a Trip to Amsterdam
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="p-journal__card js-fade">
+                                <a href="./belongings.html" class="p-journal__link">
+                                    <div class="p-journal__image">
+                                        <img src="./images/top/belongings_tobishima.jpg" alt="belongings_tobishima">
+                                    </div>
+                                    <p class="p-journal__small p-journal__small--belongings p-journal__text--black">How to pack for a travel vol.1</p>
+                                    <p class="p-journal__middle p-journal__middle--belongings  p-journal__middle--black">How Art Director Yuma Tobishima
+                                        <br>Packs for a Trip to Berlin
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-journal p-journal--interview" id="interviews">
+        <div class="p-journal__inner p-journal__inner--interview l-inner">
+            <div class="p-journal__container l-sp-container">
+                <div class="p-journal__titleBox js-fade">
+                    <h2 class="p-journal__title p-journal__title--interview u-desktop">Essay & Interview</h2>
+                </div>
+                <div class="p-journal__contents">
+                    <p class="p-journal__comment js-fade">The Creative Journey.</p>
+                    <div class="p-journal__box">
+                        <div class="p-journal__titleBox js-fade">
+                            <h2 class="p-journal__title p-journal__title--interview u-mobile"><span>Essay & Interview</span></h2>
+                        </div>
+                        <ul class="p-journal__cards">
+                            <li class="p-journal__card js-fade">
+                                <!-- 現在記事がないので"is-colse"を追加。記事が入れば外すこと start -->
+                                <a href="/interview_jay.html" class="p-journal__link">
+                                    <div class="p-journal__image">
+                                        <img src="./images/top/jay_interview.jpg" alt="interview">
+                                    </div>
+                                    <p class="p-journal__small">Interviews vol.2</p>
+                                    <p class="p-journal__middle p-journal__middle--black">Time, Vessels, and California<br>by Jay Nelson</p>
+                                </a>
+                                <!-- 現在記事がないので"is-colse"を追加。記事が入れば外すこと end -->
+                            </li>
+                            <li class="p-journal__card js-fade">
+                                <!-- 現在記事がないので"is-colse"を追加。記事が入れば外すこと start -->
+                                <a href="/interview_fujito.html" class="p-journal__link">
+                                    <div class="p-journal__image">
+                                        <img src="./images/top/f_interview.jpg" alt="interview">
+                                    </div>
+                                    <p class="p-journal__small">Interviews vol.1</p>
+                                    <p class="p-journal__middle p-journal__middle--black">BRIEFING Meets GO FUJITO</p>
+                                </a>
+                                <!-- 現在記事がないので"is-colse"を追加。記事が入れば外すこと end -->
+                            </li>
+                            <!-- <li class="p-journal__card js-fade">
+                                <a href="/sydney.html" class="p-journal__link">
+                                    <div class="p-journal__image">
+                                        <img src="./images/top/sydney.jpg" alt="sydney">
+                                        <h3 class="p-journal__imageTitle">Sydney</h3>
+                                    </div>
+                                    <p class="p-journal__small p-journal__text--red">Once in a Lifetime vol.1</p>
+                                    <p class="p-journal__middle p-journal__middle--red">
+                                        The Place Where The City
+                                        <br>
+                                        And Nature Are Close.
+                                    </p>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-footer">
+        <div class="p-footer__inner l-inner">
+            <div class="p-footer__space"></div>
+            <div class="p-footer__container">
+                <h2 class="p-footer__title">
+                    Wake Up
+                    <br>
+                    Imagination and
+                    <br>
+                    Creativity.
+                </h2>
+                <nav class="p-footer__nav">
+                    <ul class="p-footer__lists">
+                        <li class="p-footer__list">
+                            <a href="#travel">Travel Journal</a>
+                        </li>
+                        <li class="p-footer__list">
+                            <a href="#belongings">Belongings</a>
+                        </li>
+                        <li class="p-footer__list">
+                            <a href="#interviews">Essays & Interviews</a>
+                        </li>
+                        <!-- <li class="p-footer__list">
+                            <a href="">City Guide</a>
+                        </li> -->
+                        <!-- <li class="p-footer__list">
+                            <a href="">Scene</a>
+                        </li> -->
+                        <!-- <li class="p-footer__list">
+                            <a href="">About</a>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="p-footer__other">
+            <a
+                href="https://www.instagram.com/briefing_official/"
+                class="p-footer__text"
+                target="_blank"
+                rel="noopener noreferrer"
+            >@briefing_official</a>
+            <a href="https://www.briefing-usa.com" class="c-logo p-footer__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 15" fill="none">
+                    <g clip-path="url(#clip0_4782_20)">
+                      <path d="M15.4956 11.8998C15.4956 13.9312 14.6717 15.0028 11.7549 15.0028H0C0.468681 14.1046 0.355149 13.5898 0.422104 12.437V2.58814C0.422104 0.856184 0.445392 1.00448 0 0H11.7549C14.5378 0 15.4519 1.06883 15.4956 3.10297V4.81533C15.4956 6.55008 14.5815 7.14885 12.3778 7.19082C14.6688 7.55456 15.449 7.77001 15.4956 9.41522V11.8998ZM10.4653 5.15949V3.34079C10.4653 2.74203 10.4653 2.48461 9.57739 2.48461H5.9211V6.01567H9.57739C10.2877 6.01567 10.4653 5.71628 10.4653 5.15949ZM10.4653 11.6844V9.33128C10.4653 8.77448 10.4653 8.53945 9.57739 8.49748H5.9211V12.521H9.57739C10.244 12.521 10.3779 12.4566 10.4653 11.6872" fill="#AA182C"/>
+                      <path d="M33.4568 15H27.3319L24.7062 8.49468H23.0381V12.4314C23.0381 13.352 22.8605 13.6514 23.4864 15H17.1199C17.5886 14.099 17.4751 13.587 17.542 12.4314V2.58814C17.542 1.56128 17.6294 0.8338 16.986 0H28.7875C31.323 0 32.4816 0.79183 32.5253 3.31561V6.07722C32.5253 7.93788 31.8819 8.41074 30.3245 8.49748L32.2836 12.714C32.7057 13.6122 33.1511 14.6167 33.4626 15.0028M27.4746 5.15949V3.34079C27.4746 2.74203 27.4979 2.52938 26.6071 2.48461H23.041V6.01287H26.6071C27.3203 6.01287 27.428 5.92893 27.4746 5.15949Z" fill="#AA182C"/>
+                      <path d="M41.4447 15H35.0317C35.4771 14.1438 35.4101 12.9882 35.4771 12.4314V2.58814C35.4771 0.747062 35.544 1.15557 35.0317 0H41.4447C41.0663 0.769446 40.9237 1.02126 40.9761 2.48741V12.5098C40.9761 12.5098 40.9208 14.0543 41.4447 15Z" fill="#AA182C"/>
+                      <path d="M56.5764 12.1125L56.0874 15H43.4185C43.8871 14.1018 43.7765 13.587 43.8435 12.4314V2.58814C43.8435 0.856184 43.8638 1.00448 43.4185 0H55.8662L56.3115 2.88752C56.3115 2.88752 54.4194 2.48181 53.8168 2.48181H49.3425V6.01287H53.2375C53.7935 6.01287 54.1952 6.18355 55.7322 5.60716V8.88081C55.7322 8.88081 53.7964 8.51707 53.2375 8.49748H49.3425V12.521H54.1079C55.0656 12.521 55.019 12.714 56.5764 12.1153" fill="#AA182C"/>
+                      <path d="M70.5088 2.88752C69.8858 2.71684 69.062 2.52378 68.0373 2.48181H63.563V6.01287H67.458C68.014 6.01287 68.4157 6.18355 69.9499 5.60716V8.88081C69.9499 8.88081 68.014 8.51987 67.458 8.49748H63.563V12.4342C63.563 13.3548 63.3854 13.6542 64.0055 15.0028H57.6419C58.1077 14.1046 57.9971 13.5898 58.0611 12.4342V2.58814C58.0611 0.856184 58.0873 1.00448 57.6419 0H70.0867L70.5088 2.88752Z" fill="#AA182C"/>
+                      <path d="M78.2085 15H71.7955C72.2409 14.1438 72.1739 12.9882 72.2409 12.4314V2.58814C72.2409 0.747062 72.3078 1.15557 71.7955 0H78.2085C77.8272 0.769446 77.7428 1.9474 77.7428 2.58814V12.4314C77.7428 13.352 77.5827 13.6514 78.2085 15Z" fill="#AA182C"/>
+                      <path d="M96.6122 0C96.391 0.321768 96.1028 0.492445 96.1028 2.69726V15.0028H88.9765L83.0321 2.59093L82.9856 12.3055C82.9856 13.2065 83.1864 14.4684 83.5445 15.0028H80.0891C80.5141 14.3816 80.5577 14.1914 80.6043 12.3055V2.39787C80.6043 0.814214 80.5374 0.663122 80.0891 0H87.7742L93.6546 12.2412V2.39787C93.6546 1.00448 93.6546 0.685506 93.1626 0H96.6093H96.6122Z" fill="#AA182C"/>
+                      <path d="M113.307 12.0453V8.34359C113.354 7.14605 113.4 6.9502 113.997 6.01007H104.868V8.77168C104.868 8.77168 105.538 8.49189 105.759 8.49189H107.808V11.5501C107.785 12.216 107.45 12.5154 106.737 12.5154H104.912C104.181 12.493 103.823 12.1908 103.823 11.5501V3.44712C103.823 2.80358 104.181 2.48181 104.912 2.48181H108.405H110.76C111.785 2.52378 112.609 2.71684 113.231 2.88752L112.812 0H101.977C99.5262 0.0419698 98.3472 1.32624 98.3472 4.40683V10.5904C98.3909 13.822 99.6397 15 101.977 15H106.827C108.344 14.958 108.521 14.6139 108.877 13.6066L109.057 15H113.91C113.261 14.0599 113.307 13.9312 113.307 12.0453Z" fill="#AA182C"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_4782_20">
+                        <rect width="114" height="15" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </a>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- jsのファイル -->
+    <script defer src="./js/script.js?ver=1.0.4"></script>
+</body>
+</html>

@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     parts = parts.map(function(part) {
       if (!part.match(brTagRegex)) { // <br> タグでない部分だけを処理
-        return part.replace(languageRegex, '<span>$1</span>');
+        return part.replace(languageRegex, '<span class="c-language">$1</span>');
       }
       return part;
     });

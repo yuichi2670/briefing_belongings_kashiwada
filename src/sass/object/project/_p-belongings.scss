@@ -72,7 +72,7 @@
     font-family: $en-belongings-lapture;
     font-weight: 400;
     line-height: calc(44/43);
-    width: 91%;
+    width: 100%;
 
     @include mq(md) {
         width: initial;
@@ -184,14 +184,13 @@
 
 
 .p-belongings__profile-text {
-    margin-top: rem(25);
+    margin-top: rem(15);
     font-size: rem(11);
     font-weight: 500;
     line-height: normal;
 
     @include mq(md) {
         font-size: rem(10);
-        margin-top: rem(27);
     }
 }
 
