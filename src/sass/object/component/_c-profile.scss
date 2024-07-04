@@ -11,11 +11,11 @@
 }
 
 .c-profile__name {
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
 }
 
 .c-profile__date {
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     @include mq(md) {
         margin-top: rem(15);
     }
@@ -23,10 +23,10 @@
 
 .c-profile__date h4,
 .c-profile__name h4 {
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     font-weight: 400;
 
     @include mq(md) {
-        font-size: rem(14);
+        font-size: clamp(12px, rem(14), 5vw);
     }
 }

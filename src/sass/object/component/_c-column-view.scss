@@ -78,7 +78,7 @@
 }
 
 .c-column-view__text {
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     line-height: normal;
     font-weight: 500;
     margin-top: rem(13);

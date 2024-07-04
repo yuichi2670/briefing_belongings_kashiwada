@@ -692,8 +692,8 @@ select::-ms-expand {
 }
 
 .c-column-view__text {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   line-height: normal;
   font-weight: 500;
   margin-top: 13px;
@@ -1040,8 +1040,8 @@ select::-ms-expand {
 
 .c-column__text--small {
   line-height: normal;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1364,14 +1364,14 @@ select::-ms-expand {
 }
 
 .c-message {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
 }
 
 .c-message__title {
   font-family: Helvetica Neue LT Std, sans-serif;
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: clamp(12px, 13px, 5vw);
+  font-size: clamp(12px, 0.8125rem, 5vw);
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -1386,8 +1386,8 @@ select::-ms-expand {
 
 .c-message__ja {
   line-height: normal;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
 }
 
 .c-message__ja--belongings {
@@ -1413,8 +1413,8 @@ select::-ms-expand {
   line-height: normal;
   font-family: tt-commons-pro, sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
 }
 @media screen and (min-width: 768px) {
   .c-message__en {
@@ -1426,12 +1426,12 @@ select::-ms-expand {
 }
 
 .c-message__en--top {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: clamp(12px, 13px, 5vw);
+  font-size: clamp(12px, 0.8125rem, 5vw);
 }
 @media screen and (min-width: 768px) {
   .c-message__en--top {
-    font-size: 0.875rem;
+    font-size: clamp(12px, 0.875rem, 5vw);
   }
 }
 
@@ -1455,19 +1455,19 @@ select::-ms-expand {
   line-height: 1.6428571429;
   margin-top: 25px;
   margin-top: 1.5625rem;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
 }
 
 @media screen and (min-width: 768px) {
   .c-message__en--column {
-    font-size: 0.875rem;
+    font-size: clamp(12px, 0.875rem, 5vw);
   }
 }
 
 .c-message__name {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   font-family: "Oranienbaum", serif;
   font-weight: 400;
   margin-top: 13px;
@@ -1538,13 +1538,13 @@ select::-ms-expand {
 }
 
 .c-profile__name {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
 }
 
 .c-profile__date {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
 }
 @media screen and (min-width: 768px) {
   .c-profile__date {
@@ -1554,14 +1554,14 @@ select::-ms-expand {
 
 .c-profile__date h4,
 .c-profile__name h4 {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .c-profile__date h4,
   .c-profile__name h4 {
-    font-size: 0.875rem;
+    font-size: clamp(12px, 0.875rem, 5vw);
   }
 }
 
@@ -1763,8 +1763,8 @@ select::-ms-expand {
   margin-top: 10px;
   margin-top: 0.625rem;
   font-family: tt-commons-pro, sans-serif;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
 }
 @media screen and (min-width: 768px) {
   .c-vol {
@@ -2002,8 +2002,8 @@ select::-ms-expand {
 }
 
 .p-archive__vol {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
   line-height: normal;
   font-family: tt-commons-pro, sans-serif;
   font-weight: 400;
@@ -2065,8 +2065,8 @@ select::-ms-expand {
 }
 
 .p-archive__names {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
   font-weight: 400;
   font-family: tt-commons-pro, sans-serif;
   line-height: normal;
@@ -2345,14 +2345,14 @@ select::-ms-expand {
 .p-belongings__profile-text {
   margin-top: 15px;
   margin-top: 0.9375rem;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: clamp(10.5px, 11px, 5vw);
+  font-size: clamp(10.5px, 0.6875rem, 5vw);
   font-weight: 500;
   line-height: normal;
 }
 @media screen and (min-width: 768px) {
   .p-belongings__profile-text {
-    font-size: 0.625rem;
+    font-size: clamp(10px, 0.625rem, 5vw);
   }
 }
 
@@ -2367,8 +2367,8 @@ select::-ms-expand {
   width: fit-content;
   display: block;
   font-family: "Oranienbaum", serif;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   font-weight: 400;
 }
 
@@ -2410,8 +2410,8 @@ select::-ms-expand {
 }
 
 .p-belongings__comment {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   font-weight: 500;
   line-height: normal;
   margin-top: 15px;
@@ -2424,8 +2424,8 @@ select::-ms-expand {
 }
 
 .p-belongings__comment-en {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: clamp(12px, 13px, 5vw);
+  font-size: clamp(12px, 0.8125rem, 5vw);
   font-family: tt-commons-pro, sans-serif;
   font-weight: 400;
   line-height: normal;
@@ -2485,8 +2485,8 @@ select::-ms-expand {
 }
 
 .p-belongings__card-name {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
   font-family: tt-commons-pro, sans-serif;
   font-weight: 400;
   line-height: normal;
@@ -2520,8 +2520,8 @@ select::-ms-expand {
   display: inline;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
   background-image: linear-gradient(#000, #000);
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   font-weight: 400;
   font-family: tt-commons-pro, sans-serif;
   padding-bottom: 2px;
@@ -2756,7 +2756,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-footer__other a {
-    font-size: 0.75rem;
+    font-size: clamp(11px, 0.75rem, 5vw);
   }
 }
 
@@ -3199,8 +3199,8 @@ select::-ms-expand {
 }
 
 .p-interview-contents__text--en p {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
   font-weight: 600;
   line-height: 1.6428571429;
 }
@@ -3342,20 +3342,20 @@ select::-ms-expand {
 .p-interview-contents__comment--en {
   font-family: tt-commons-pro, sans-serif;
   font-weight: 100;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
 }
 
 .p-interview-contents__comment--en p {
   font-weight: 100 !important;
-  font-size: 14px !important;
-  font-size: 0.875rem !important;
+  font-size: clamp(12px, 14px, 5vw) !important;
+  font-size: clamp(12px, 0.875rem, 5vw) !important;
 }
 
 .p-interview-contents__comment--en h4 {
   font-weight: 700;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
   display: block;
 }
 
@@ -3365,8 +3365,8 @@ select::-ms-expand {
 }
 
 .p-interview-contents__comment p {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   font-weight: 400;
   line-height: normal;
   margin-top: 14px;
@@ -3374,7 +3374,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-interview-contents__comment p {
-    font-size: 0.875rem;
+    font-size: clamp(12px, 0.875rem, 5vw);
   }
 }
 
@@ -3386,8 +3386,8 @@ select::-ms-expand {
 
 .p-interview-contents__comment strong {
   font-weight: 600;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
   display: block;
@@ -3395,7 +3395,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-interview-contents__comment strong {
-    font-size: 0.875rem;
+    font-size: clamp(12px, 0.875rem, 5vw);
   }
 }
 
@@ -3409,8 +3409,8 @@ select::-ms-expand {
   margin-top: 1.375rem;
   font-family: tt-commons-pro, sans-serif;
   font-weight: 700;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: clamp(10.5px, 11px, 5vw);
+  font-size: clamp(10.5px, 0.6875rem, 5vw);
   line-height: 1.7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3517,15 +3517,15 @@ select::-ms-expand {
 }
 
 .p-interview-contents__name {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
   font-weight: 700;
   line-height: 1.3571428571;
 }
 
 .p-interview-contents__detail {
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: clamp(10.5px, 11px, 5vw);
+  font-size: clamp(10.5px, 0.6875rem, 5vw);
   font-weight: 400;
   line-height: 1.7272727273;
   margin-top: 11px;
@@ -3535,8 +3535,8 @@ select::-ms-expand {
 .p-interview-contents__detail--en {
   font-family: tt-commons-pro, sans-serif;
   line-height: 1.5833333333;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   margin-top: 17px;
   margin-top: 1.0625rem;
 }
@@ -3564,8 +3564,8 @@ select::-ms-expand {
 }
 
 .p-interview-contents__links a {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   font-weight: 400;
   line-height: 1.5833333333;
   font-family: tt-commons-pro, sans-serif;
@@ -3670,8 +3670,8 @@ select::-ms-expand {
 }
 
 .p-interview-main__name {
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: clamp(10.5px, 11px, 5vw);
+  font-size: clamp(10.5px, 0.6875rem, 5vw);
   font-weight: 600;
   line-height: 1.5454545455;
   font-family: tt-commons-pro, sans-serif;
@@ -3800,8 +3800,8 @@ select::-ms-expand {
   border: 1px solid #fff;
   border-radius: 1.6875rem;
   font-family: tt-commons-pro, sans-serif;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
   font-weight: 500;
   position: absolute;
   content: "";
@@ -4076,8 +4076,8 @@ select::-ms-expand {
   }
 }
 .p-journal__small {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: clamp(12px, 14px, 5vw);
+  font-size: clamp(12px, 0.875rem, 5vw);
   font-family: tt-commons-pro, sans-serif;
   font-weight: 600;
   margin-top: 17px;
@@ -4535,8 +4535,8 @@ select::-ms-expand {
 
 .s-about__image-text {
   color: #005829;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   line-height: normal;
   margin-top: 10px;
   margin-top: 0.625rem;
@@ -4768,8 +4768,8 @@ select::-ms-expand {
 }
 
 .s-column__details {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
 }
 
 .s-column__line {
@@ -4782,8 +4782,8 @@ select::-ms-expand {
   font-family: tt-commons-pro, sans-serif;
   font-weight: 400;
   line-height: normal;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: clamp(11px, 12px, 5vw);
+  font-size: clamp(11px, 0.75rem, 5vw);
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;

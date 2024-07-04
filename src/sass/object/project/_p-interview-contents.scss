@@ -88,7 +88,7 @@
     }
 }
 .p-interview-contents__text--en p {
-    font-size: rem(14);
+    font-size: clamp(12px, rem(14), 5vw);
     font-weight: 600;
     line-height: calc(23/14);
 
@@ -207,17 +207,17 @@
 .p-interview-contents__comment--en {
     font-family: $en-font-second;
     font-weight: 100;
-    font-size: rem(14);
+    font-size: clamp(12px, rem(14), 5vw);
 }
 
 .p-interview-contents__comment--en p {
     font-weight: 100!important;
-    font-size: rem(14)!important;
+    font-size: clamp(12px, rem(14), 5vw)!important;
 }
 
 .p-interview-contents__comment--en h4 {
     font-weight: 700;
-    font-size: rem(14);
+    font-size: clamp(12px, rem(14), 5vw);
     display: block;
 }
 
@@ -226,13 +226,13 @@
 }
 
 .p-interview-contents__comment p {
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     font-weight: 400;
     line-height: normal;
     margin-top: calc(#{rem(14)} * (12 / 12));
 
     @include mq(md) {
-        font-size: rem(14);
+        font-size: clamp(12px, rem(14), 5vw);
     }
 }
 
@@ -244,13 +244,13 @@
 
 .p-interview-contents__comment strong {
     font-weight: 600;
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     margin-bottom: rem(30);
     display: block;
     line-height: normal;
 
     @include mq(md) {
-        font-size: rem(14);
+        font-size: clamp(12px, rem(14), 5vw);
     }
 }
 
@@ -263,7 +263,7 @@
     margin-top: rem(22);
     font-family: $en-font-second;
     font-weight: 700;
-    font-size: rem(11);
+    font-size: clamp(10.5px, rem(11), 5vw);
     line-height: 1.7;
     display: flex;
     align-items: center;
@@ -353,13 +353,13 @@
 }
 
 .p-interview-contents__name {
-    font-size: rem(14);
+    font-size: clamp(12px, rem(14), 5vw);
     font-weight: 700;
     line-height: calc(19/14);
 }
 
 .p-interview-contents__detail {
-    font-size: rem(11);
+    font-size: clamp(10.5px, rem(11), 5vw);
     font-weight: 400;
     line-height: calc(19/11);
     margin-top: rem(11);
@@ -370,7 +370,7 @@
 .p-interview-contents__detail--en {
     font-family: $en-font-second;
     line-height: calc(19/12);
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     margin-top: rem(17);
     @include mq(md) {
         // margin-top: rem(8);
@@ -398,7 +398,7 @@
 }
 
 .p-interview-contents__links a {
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     font-weight: 400;
     line-height: calc(19/12);
     font-family: $en-font-second;

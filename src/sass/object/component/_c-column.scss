@@ -121,7 +121,7 @@
 
 .c-column__text--small {
     line-height: normal;
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     width: fit-content;
 
     @include mq(md) {

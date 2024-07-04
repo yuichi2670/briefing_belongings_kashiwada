@@ -155,7 +155,7 @@
 }
 
 .s-column__details {
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
 }
 
 .s-column__line {
@@ -168,7 +168,7 @@
     font-family: $en-font-second;
     font-weight: 400;
     line-height: normal;
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     display: block;
     width: fit-content;
 }

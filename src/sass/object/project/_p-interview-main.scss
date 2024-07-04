@@ -61,7 +61,7 @@
     }
 }
 .p-interview-main__name {
-    font-size: rem(11);
+    font-size: clamp(10.5px, rem(11), 5vw);
     font-weight: 600;
     line-height: calc(17/11);
     font-family: $en-font-second;

@@ -111,7 +111,7 @@
 .p-footer__other a {
     font-family: $en-font-second;
     @include mq(md) {
-        font-size: rem(12);
+        font-size: clamp(11px, rem(12), 5vw);
     }
 }
 

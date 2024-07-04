@@ -185,12 +185,12 @@
 
 .p-belongings__profile-text {
     margin-top: rem(15);
-    font-size: rem(11);
+    font-size: clamp(10.5px, rem(11), 5vw);
     font-weight: 500;
     line-height: normal;
 
     @include mq(md) {
-        font-size: rem(10);
+        font-size: clamp(10px, rem(10), 5vw);
     }
 }
 
@@ -202,7 +202,7 @@
     width: fit-content;
     display: block;
     font-family: $en-belongings-oranienbaum;
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     font-weight: 400;
 }
 
@@ -237,7 +237,7 @@
 }
 
 .p-belongings__comment {
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     font-weight: 500;
     line-height: normal;
     margin-top: rem(15);
@@ -249,7 +249,7 @@
 }
 
 .p-belongings__comment-en {
-    font-size: rem(13);
+    font-size: clamp(12px, rem(13), 5vw);
     font-family: $en-font-second;
     font-weight: 400;
     line-height: normal;
@@ -304,7 +304,7 @@
 }
 
 .p-belongings__card-name {
-    font-size: rem(14);
+    font-size: clamp(12px, rem(14), 5vw);
     font-family: $en-font-second;
     font-weight: 400;
     line-height: normal;
@@ -333,7 +333,7 @@
     display: inline;
     background-image: linear-gradient($black, $black);
 
-    font-size: rem(12);
+    font-size: clamp(11px, rem(12), 5vw);
     font-weight: 400;
     font-family: $en-font-second;
     padding-bottom: rem(2);

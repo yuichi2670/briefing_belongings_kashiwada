@@ -3,7 +3,7 @@
 .c-vol {
     margin-top: rem(10);
     font-family: $en-font-second;
-    font-size: rem(14);
+    font-size: clamp(12px, rem(14), 5vw);
 
     @include mq(md) {
         margin-top: rem(17);
